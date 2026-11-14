@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>AL-IRTIQA-26 | A Seven-Day Educational & Higher-Studies Camp</title>
+  <meta name="title" content="AL-IRTIQA-26 | A Seven-Day Educational & Higher-Studies Camp">
+  <meta name="description"
+    content="A transformative seven-day residential academic orientation guiding students towards higher education, global scholarship, and excellence.">
+  <meta name="theme-color" content="#1F5BA9">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AL-IRTIQA-26 | The Art of Ascension">
+  <meta property="og:description"
+    content="Seven-day higher education and academic orientation camp organized by Alathurpadi Dars Students' Association (ADSA).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/al-irtiqa-26-logo.png">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheets Stack -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <style>
+    /* Specific Layout Details for Homepage Experience */
+    .hero-foundation {
+      position: relative;
+      min-height: 94vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 130px;
+      padding-bottom: var(--space-2xl);
+      text-align: center;
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 15%, rgba(238, 244, 252, 0.95) 0%, rgba(248, 250, 252, 0.6) 65%);
+    }
+
+    .hero-halo-mint {
+      position: absolute;
+      top: 20%;
+      right: 25%;
+      width: clamp(260px, 32vw, 500px);
+      height: clamp(260px, 32vw, 500px);
+      background: radial-gradient(circle, rgba(142, 214, 195, 0.28) 0%, rgba(234, 247, 242, 0.05) 70%, transparent 100%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(20px);
+    }
+
+    .hero-halo-blue {
+      position: absolute;
+      top: 10%;
+      left: 18%;
+      width: clamp(280px, 34vw, 540px);
+      height: clamp(280px, 34vw, 540px);
+      background: radial-gradient(circle, rgba(31, 91, 169, 0.12) 0%, rgba(238, 244, 252, 0.05) 70%, transparent 100%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(25px);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 940px;
+      margin: 0 auto;
+    }
+
+    .hero-logo-wrap {
+      margin-bottom: var(--space-md);
+      display: inline-block;
+    }
+
+    .hero-brand-logo-img {
+      height: clamp(90px, 12vw + 30px, 150px);
+      width: auto;
+      margin: 0 auto;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 8px 24px rgba(31, 91, 169, 0.14));
+      transition: transform var(--transition-base);
+    }
+
+    .hero-brand-logo-img:hover {
+      transform: scale(1.02);
+    }
+
+    .hero-badges-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: var(--space-md);
+    }
+
+    .hero-title {
+      font-size: var(--font-size-display);
+      margin-bottom: 0.75rem;
+      letter-spacing: var(--tracking-tight);
+      font-weight: var(--fw-black);
+    }
+
+    .hero-arabic-quote {
+      font-family: var(--font-arabic);
+      font-size: clamp(1.35rem, 1.4vw + 1rem, 2.15rem);
+      color: var(--color-blue-royal);
+      margin-bottom: 1.25rem;
+      direction: rtl;
+      letter-spacing: 0;
+      font-weight: var(--fw-bold);
+    }
+
+    .hero-description {
+      font-size: var(--font-size-md);
+      color: var(--text-secondary);
+      max-width: 740px;
+      margin: 0 auto var(--space-lg);
+      line-height: var(--line-height-editorial);
+    }
+
+    .countdown-box {
+      display: inline-flex;
+      align-items: center;
+      gap: clamp(0.5rem, 1.5vw, 1.5rem);
+      background: #FFFFFF;
+      border: 1.5px solid var(--border-blue);
+      border-radius: var(--radius-md);
+      padding: var(--space-sm) var(--space-lg);
+      margin-bottom: var(--space-xl);
+      box-shadow: var(--shadow-md);
+    }
+
+    .countdown-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 58px;
+    }
+
+    .countdown-val {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 1.6vw + 1rem, 2.35rem);
+      font-weight: var(--fw-black);
+      color: var(--color-blue-royal);
+      line-height: 1;
+    }
+
+    .countdown-lbl {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-wider);
+      color: var(--text-muted);
+      margin-top: 4px;
+      font-weight: var(--fw-semibold);
+    }
+
+    .countdown-divider {
+      color: var(--color-emerald);
+      font-size: 1.5rem;
+      font-weight: var(--fw-bold);
+      opacity: 0.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Scroll Indicator */
+    .scroll-indicator-wrap {
+      margin-top: var(--space-xl);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-muted);
+      font-size: var(--font-size-xs);
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-wide);
+    }
+
+    .scroll-mouse-icon {
+      width: 22px;
+      height: 36px;
+      border: 2px solid var(--color-blue-royal);
+      border-radius: 12px;
+      position: relative;
+    }
+
+    .scroll-mouse-icon::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 7px;
+      background: var(--color-blue-royal);
+      border-radius: 2px;
+      animation: mouseScroll 1.6s ease-in-out infinite;
+    }
+
+    @keyframes mouseScroll {
+      0% {
+        top: 6px;
+        opacity: 1;
+      }
+
+      100% {
+        top: 18px;
+        opacity: 0;
+      }
+    }
+
+    /* Trajectory Stage Card */
+    .trajectory-step-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+      box-shadow: var(--shadow-card);
+      position: relative;
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .trajectory-step-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card-hover);
+      border-color: var(--border-blue-hover);
+    }
+
+    .trajectory-step-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--color-blue-pale);
+      color: var(--color-blue-royal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: var(--fw-bold);
+      margin-bottom: var(--space-md);
+    }
+
+    /* Global Universities Section */
+    .global-map-card {
+      background: linear-gradient(135deg, #0A1633 0%, #152E75 100%);
+      border-radius: var(--radius-xl);
+      padding: var(--space-2xl) var(--space-lg);
+      color: #FFFFFF;
+      position: relative;
+      overflow: hidden;
+      margin-top: var(--space-xl);
+    }
+
+    .global-univ-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: var(--space-md) 0;
+    }
+
+    .univ-pill {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      transition: background var(--transition-fast);
+    }
+
+    .univ-pill:hover {
+      background: var(--color-emerald);
+      border-color: var(--color-emerald);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       1. PREMIUM LOADING EXPERIENCE
+       ========================================================================== -->
+  <div id="site-preloader" role="status" aria-live="polite">
+    <div class="preloader-content">
+      <img src="assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo" class="preloader-logo-img">
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar"></div>
+      </div>
+      <p class="preloader-text" data-i18n="preloader.text">Ascending towards academic excellence...</p>
+      <button type="button" class="preloader-skip-btn" data-i18n="preloader.skip">Skip Introduction</button>
+    </div>
+  </div>
+
+  <!-- Accessible Skip to Main Content Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- ==========================================================================
+       2. MAIN NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+
+      <!-- Official AL-IRTIQA-26 Brand Logo -->
+      <!-- Official Dual Brand Identity: AL-IRTIQA-26 + ADSA -->
+      <a href="index.html" class="nav-brand" aria-label="AL-IRTIQA-26 Homepage">
+        <img src="assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo" class="nav-brand-logo-img">
+        <div class="nav-brand-lockup">
+          <img src="assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo" class="nav-brand-logo-img">
+          <span class="nav-brand-divider"></span>
+          <div class="nav-adsa-wrap" title="Alathurpadi Dars Students' Association">
+            <img src="assets/images/brand/adsa-official-logo.png" alt="ADSA Official Logo" class="nav-adsa-logo-img">
+            <div class="nav-adsa-text">
+              <span class="nav-adsa-tag">ADSA</span>
+              <span class="nav-adsa-sub">Melmuri</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active" data-i18n="nav.home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-intro" class="nav-link" data-i18n="nav.about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#theme-concept" class="nav-link" data-i18n="nav.theme">Theme</a>
+          </li>
+          <li class="nav-item">
+            <a href="#journey-preview" class="nav-link" data-i18n="nav.journey">7 Days</a>
+          </li>
+          <li class="nav-item">
+            <a href="#speakers-preview" class="nav-link" data-i18n="nav.people">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#global-studies" class="nav-link" data-i18n="nav.globalStudies">Global Map</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery-preview" class="nav-link" data-i18n="nav.gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#resources-preview" class="nav-link" data-i18n="nav.resources">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a href="student/login.html" class="nav-link"
+              style="color: var(--color-blue-royal); font-weight: var(--fw-bold);" data-i18n="nav.studentPortal">Student
+              Portal</a>
+          </li>
+          <li class="nav-item">
+            <a href="admin/login.html" class="nav-link"
+              style="color: var(--color-emerald); font-weight: var(--fw-bold);" data-i18n="nav.adminDashboard">Admin
+              Demo</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Hamburger -->
+      <div class="nav-actions">
+        <!-- 3-Way Language Switcher -->
+        <div class="lang-switcher" role="group" aria-label="Language Switcher">
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="ml" aria-pressed="false">മലയാളം</button>
+          <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">العربية</button>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button type="button" class="nav-toggle-btn" aria-label="Toggle Navigation Menu" aria-expanded="false"
+          aria-controls="mobile-drawer">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Mobile Navigation">
+    <div class="mobile-nav-top">
+      <div style="margin-bottom: 1.5rem;">
+        <img src="assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo"
+          style="height: 42px; width: auto; object-fit: contain;">
+        <div class="nav-brand-lockup">
+          <img src="assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo"
+            style="height: 34px; width: auto; object-fit: contain;">
+          <span class="nav-brand-divider"></span>
+          <img src="assets/images/brand/adsa-official-logo.png" alt="ADSA Official Logo"
+            style="height: 30px; width: auto; object-fit: contain;">
+        </div>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link active" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about-intro" class="mobile-nav-link" data-i18n="nav.about">About Camp</a></li>
+        <li><a href="#theme-concept" class="mobile-nav-link" data-i18n="nav.theme">Thematic Vision</a></li>
+        <li><a href="#journey-preview" class="mobile-nav-link" data-i18n="nav.journey">7 Days Journey</a></li>
+        <li><a href="#speakers-preview" class="mobile-nav-link" data-i18n="nav.people">Speakers</a></li>
+        <li><a href="#global-studies" class="mobile-nav-link" data-i18n="nav.globalStudies">Global Map</a></li>
+        <li><a href="#gallery-preview" class="mobile-nav-link" data-i18n="nav.gallery">Media Gallery</a></li>
+        <li><a href="#resources-preview" class="mobile-nav-link" data-i18n="nav.resources">Resources</a></li>
+        <li><a href="student/login.html" class="mobile-nav-link text-royal" data-i18n="nav.studentPortal">Student
+            Portal</a></li>
+        <li><a href="admin/login.html" class="mobile-nav-link text-emerald" data-i18n="nav.adminDashboard">Admin
+            Demo</a></li>
+      </ul>
+    </div>
+    <div class="mobile-nav-meta">
+      <div class="badge badge-royal" data-i18n="hero.datesBadge">21 – 27 December 2026</div>
+      <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.5;">
+        Alathurpadi Dars, Melmuri, Malappuram<br>
+        Organized by ADSA
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER (ALL 17 SECTIONS)
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- 3. IMMERSIVE HERO SECTION -->
+    <section class="hero-foundation" id="hero" aria-label="Introduction & Theme">
+      <div class="hero-halo-mint"></div>
+      <div class="hero-halo-blue"></div>
+
+      <div class="container hero-content">
+        <!-- Official AL-IRTIQA-26 Logo in Hero with natural proportions & clear space -->
+        <div class="hero-logo-wrap reveal-scale-up">
+          <img src="assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo" class="hero-brand-logo-img">
+        </div>
+
+        <!-- Badges -->
+        <div class="hero-badges-wrap reveal-fade-up delay-100">
+          <span class="badge badge-royal badge-dot" data-i18n="hero.eyebrow">7-Day Higher Studies Orientation
+            Camp</span>
+          <span class="badge badge-emerald" data-i18n="hero.datesBadge">21 – 27 December 2026</span>
+          <span class="badge badge-outline" data-i18n="hero.venueBadge">Melmuri, Malappuram</span>
+          <span class="badge badge-outline" style="display: inline-flex; align-items: center; gap: 0.45rem;">
+            <img src="assets/images/brand/adsa-official-logo.png" alt="ADSA" style="height: 18px; width: auto;">
+            <span>Organized by ADSA</span>
+          </span>
+        </div>
+
+        <!-- Expressive Main Title -->
+        <h1 class="hero-title reveal-fade-up delay-200">
+          <span class="royal-gradient-text" data-i18n="hero.titleMain">The Art of Ascension</span>
+        </h1>
+
+        <!-- Thematic Inscription -->
+        <p class="hero-arabic-quote reveal-fade-up delay-300" data-i18n="hero.taglineArabic">
+          بِالْعِلْمِ نَرْتَقِي، وَبِالْهِمَمِ نَسْمُو
+        </p>
+
+        <!-- Descriptive Synopsis -->
+        <p class="hero-description reveal-fade-up delay-400" data-i18n="hero.desc">
+          An intensive seven-day residential academic orientation bringing together promising scholars to navigate
+          premier universities, scholarships, research methodologies, and transformative leadership.
+        </p>
+
+        <!-- Live Camp Countdown Timer Container -->
+        <div class="countdown-box reveal-scale-up delay-400" data-countdown aria-label="Camp Countdown">
+          <div class="countdown-item">
+            <span class="countdown-val" data-days>00</span>
+            <span class="countdown-lbl" data-i18n="hero.countdownDays">Days</span>
+          </div>
+          <span class="countdown-divider">:</span>
+          <div class="countdown-item">
+            <span class="countdown-val" data-hours>00</span>
+            <span class="countdown-lbl" data-i18n="hero.countdownHours">Hours</span>
+          </div>
+          <span class="countdown-divider">:</span>
+          <div class="countdown-item">
+            <span class="countdown-val" data-mins>00</span>
+            <span class="countdown-lbl" data-i18n="hero.countdownMins">Minutes</span>
+          </div>
+          <span class="countdown-divider">:</span>
+          <div class="countdown-item">
+            <span class="countdown-val" data-secs>00</span>
+            <span class="countdown-lbl" data-i18n="hero.countdownSecs">Seconds</span>
+          </div>
+        </div>
+
+        <!-- Call To Actions -->
+        <div class="hero-actions reveal-fade-up delay-500">
+          <a href="#journey-preview" class="btn btn-royal btn-lg">
+            <span data-i18n="hero.btnExplore">Explore 7 Days Journey</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="student/login.html" class="btn btn-emerald btn-lg">
+            <span data-i18n="hero.btnRegister">Student Portal Demo</span>
+          </a>
+        </div>
+
+        <!-- Smooth Scroll Indicator -->
+        <div class="scroll-indicator-wrap reveal-fade-in delay-500">
+          <div class="scroll-mouse-icon"></div>
+          <span data-i18n="hero.scrollHint">Scroll to explore</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. CAMP INTRODUCTION -->
+    <section class="section-spacer" id="about-intro" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="intro.eyebrow">01 // Camp Overview</span>
+          <h2 class="section-title" id="intro-title" data-i18n="intro.title">An Academic Horizon Beyond the Dars</h2>
+          <p class="section-desc" data-i18n="intro.subtitle">
+            Empowering final-year scholars with the strategic roadmap, linguistic fluency, and intellectual rigor
+            required for premier university admissions worldwide.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-4">
+          <div class="card-elevation reveal-fade-up">
+            <div style="color: var(--color-blue-royal); margin-bottom: 0.75rem;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;" data-i18n="intro.pillar1Title">150+ Years Dars Legacy
+            </h3>
+            <p style="font-size: 0.875rem;" data-i18n="intro.pillar1Desc">Rooted in authentic pedagogical traditions
+              supervised by eminent scholar Dr. C.K. Muhammed Abdurahman Al Faizy Al Azhari.</p>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-100">
+            <div style="color: var(--color-emerald); margin-bottom: 0.75rem;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;" data-i18n="intro.pillar2Title">Global University
+              Roadmap</h3>
+            <p style="font-size: 0.875rem;" data-i18n="intro.pillar2Desc">Strategic guidance for admissions, entrance
+              examinations, and fellowships across Central Universities and international campuses.</p>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-200">
+            <div style="color: var(--color-blue-royal); margin-bottom: 0.75rem;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15z" />
+              </svg>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;" data-i18n="intro.pillar3Title">Trilingual Command
+            </h3>
+            <p style="font-size: 0.875rem;" data-i18n="intro.pillar3Desc">Advanced academic immersion in Functional
+              Arabic, Academic English, and Urdu for cross-cultural scholarly impact.</p>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-300">
+            <div style="color: var(--color-emerald); margin-bottom: 0.75rem;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;" data-i18n="intro.pillar4Title">Lifelong Mentorship
+              Network</h3>
+            <p style="font-size: 0.875rem;" data-i18n="intro.pillar4Desc">Direct fellowship pairing with university
+              scholars, researchers, and professional educational advisors.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. AL-IRTIQA THEME EXPLANATION -->
+    <section class="section-spacer" id="theme-concept" style="background: var(--color-blue-pale);"
+      aria-labelledby="theme-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="theme.eyebrow">02 // Thematic Philosophy</span>
+          <h2 class="section-title royal-gradient-text" id="theme-title" data-i18n="theme.title">The Art of Ascension
+            (فن الارتقاء)</h2>
+          <p class="section-desc" data-i18n="theme.subtitle">
+            Ascension is not an accident of ambition—it is a conscious, structured ascent of intellect, ethics, and
+            scholarly purpose.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div class="trajectory-step-card reveal-fade-up">
+            <div class="trajectory-step-num">01</div>
+            <h3 style="font-size: 1.25rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="theme.stage1Title">
+              I. Al-Rusukh (Firm Grounding)
+            </h3>
+            <p style="font-size: 0.9375rem;" data-i18n="theme.stage1Desc">
+              Rooted deep in classical epistemology, moral integrity, and rigorous textual comprehension.
+            </p>
+          </div>
+
+          <div class="trajectory-step-card reveal-fade-up delay-100"
+            style="border-top: 3px solid var(--color-blue-royal);">
+            <div class="trajectory-step-num" style="background: var(--color-blue-royal); color: #FFF;">02</div>
+            <h3 style="font-size: 1.25rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="theme.stage2Title">
+              II. Al-Irtiqa (Ascension in Disciplines)
+            </h3>
+            <p style="font-size: 0.9375rem;" data-i18n="theme.stage2Desc">
+              Elevating into contemporary research, analytical logic, academic writing, and dialectics.
+            </p>
+          </div>
+
+          <div class="trajectory-step-card reveal-fade-up delay-200"
+            style="border-top: 3px solid var(--color-emerald);">
+            <div class="trajectory-step-num"
+              style="background: var(--color-mint-pale); color: var(--color-emerald-deep);">03</div>
+            <h3 style="font-size: 1.25rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="theme.stage3Title">
+              III. Al-Afaq (Global Horizons)
+            </h3>
+            <p style="font-size: 0.9375rem;" data-i18n="theme.stage3Desc">
+              Soaring into global academia, cultural diplomacy, and transformative societal leadership.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. VISION AND MISSION -->
+    <section class="section-spacer" id="vision-mission" aria-labelledby="vision-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="vision.eyebrow">03 // Direction & Purpose</span>
+          <h2 class="section-title" id="vision-title" data-i18n="vision.title">Our Vision & Institutional Mission</h2>
+        </div>
+
+        <div class="grid grid-cols-2">
+          <div class="card-featured reveal-fade-up">
+            <span class="badge badge-royal" style="margin-bottom: 0.75rem;" data-i18n="vision.visionTitle">Our
+              Vision</span>
+            <p style="font-size: 1.0625rem; line-height: 1.7; color: var(--text-primary); font-weight: var(--fw-medium);"
+              data-i18n="vision.visionText">
+              To nurture a distinguished cadre of multi-disciplinary scholars who integrate the spiritual depth of
+              classical Dars learning with the cutting-edge analytical capabilities demanded by premier global
+              universities.
+            </p>
+          </div>
+
+          <div class="card-featured reveal-fade-up delay-100" style="border-color: var(--color-emerald-border);">
+            <span class="badge badge-emerald" style="margin-bottom: 0.75rem;" data-i18n="vision.missionTitle">Our
+              Mission</span>
+            <p style="font-size: 1.0625rem; line-height: 1.7; color: var(--text-primary); font-weight: var(--fw-medium);"
+              data-i18n="vision.missionText">
+              To provide an intensive seven-day residential immersion equipping each participant with personal academic
+              roadmaps, scholarship strategies, dialectical writing skills, and lifelong mentors.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. THE SEVEN DAYS JOURNEY -->
+    <section class="section-spacer" id="journey-preview" style="background: var(--color-offwhite);"
+      aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="journey.eyebrow">04 // Seven-Day Program</span>
+          <h2 class="section-title royal-gradient-text" id="journey-title" data-i18n="journey.title">The Seven Days
+            Journey</h2>
+          <p class="section-desc" data-i18n="journey.subtitle">
+            A progressive, curriculum-driven expedition structured across seven transformative days.
+          </p>
+        </div>
+
+        <!-- Interactive Day Tabs -->
+        <div class="journey-tabs-wrap">
+          <button type="button" class="journey-tab-btn active" data-day="day01">Day 01</button>
+          <button type="button" class="journey-tab-btn" data-day="day02">Day 02</button>
+          <button type="button" class="journey-tab-btn" data-day="day03">Day 03</button>
+          <button type="button" class="journey-tab-btn" data-day="day04">Day 04</button>
+          <button type="button" class="journey-tab-btn" data-day="day05">Day 05</button>
+          <button type="button" class="journey-tab-btn" data-day="day06">Day 06</button>
+          <button type="button" class="journey-tab-btn" data-day="day07">Day 07</button>
+        </div>
+
+        <!-- Day Panels Container -->
+        <div id="journey-cards-container">
+          <!-- Day 01 Panel -->
+          <div class="journey-card journey-day-panel" data-day="day01">
+            <div class="journey-card-header">
+              <div>
+                <span class="badge badge-royal">DEC 21 • MONDAY</span>
+                <div class="journey-card-day-num">DAY 01</div>
+              </div>
+              <div style="text-align: right;">
+                <span class="badge badge-emerald">INAUGURAL STAGE</span>
+              </div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.5rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;">Foundations of
+                Elevation</h3>
+              <p style="font-size: 1.05rem; color: var(--color-blue-royal); font-weight: var(--fw-semibold);">Theme:
+                Spiritual Grounding & Academic Mindset</p>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Inaugural address by Chief Patron Dr. C.K. Muhammed Abdurahman Al Faizy Al Azhari. Orientation on
+                balancing classical Dars ethics with contemporary university ambitions, establishing individual goal
+                journals, and opening plenary sessions.
+              </p>
+            </div>
+            <a href="pages/day-01.html" class="btn btn-outline" style="align-self: flex-start;">
+              <span data-i18n="journey.viewDayDetails">View Full Day Schedule →</span>
+            </a>
+          </div>
+
+          <!-- Day 02 Panel -->
+          <div class="journey-card journey-day-panel" data-day="day02" style="display: none;">
+            <div class="journey-card-header">
+              <div>
+                <span class="badge badge-royal">DEC 22 • TUESDAY</span>
+                <div class="journey-card-day-num">DAY 02</div>
+              </div>
+              <div style="text-align: right;"><span class="badge badge-outline">RESEARCH METHODOLOGY</span></div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.5rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;">Classical Wisdom,
+                Modern Horizons</h3>
+              <p style="font-size: 1.05rem; color: var(--color-blue-royal); font-weight: var(--fw-semibold);">Theme:
+                Dars Heritage & Research Methodology</p>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Connecting deep classical Islamic sciences with modern academic research methodologies. Qualitative
+                paper structuring, textual hermeneutics, and critical analysis of contemporary academic discourse.
+              </p>
+            </div>
+            <a href="pages/day-02.html" class="btn btn-outline" style="align-self: flex-start;">
+              <span data-i18n="journey.viewDayDetails">View Full Day Schedule →</span>
+            </a>
+          </div>
+
+          <!-- Day 03 Panel -->
+          <div class="journey-card journey-day-panel" data-day="day03" style="display: none;">
+            <div class="journey-card-header">
+              <div>
+                <span class="badge badge-royal">DEC 23 • WEDNESDAY</span>
+                <div class="journey-card-day-num">DAY 03</div>
+              </div>
+              <div style="text-align: right;"><span class="badge badge-emerald">LANGUAGE IMMERSION</span></div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.5rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;">The Power of
+                Languages</h3>
+              <p style="font-size: 1.05rem; color: var(--color-blue-royal); font-weight: var(--fw-semibold);">Theme:
+                Functional Arabic, Academic English & Urdu</p>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Full-day linguistic laboratory. Spoken Arabic fluency for global scholarship, academic writing
+                conventions in English, and Urdu literary discourse. Intensive breakout discussion circles.
+              </p>
+            </div>
+            <a href="pages/day-03.html" class="btn btn-outline" style="align-self: flex-start;">
+              <span data-i18n="journey.viewDayDetails">View Full Day Schedule →</span>
+            </a>
+          </div>
+
+          <!-- Day 04 Panel -->
+          <div class="journey-card journey-day-panel" data-day="day04" style="display: none;">
+            <div class="journey-card-header">
+              <div>
+                <span class="badge badge-royal">DEC 24 • THURSDAY</span>
+                <div class="journey-card-day-num">DAY 04</div>
+              </div>
+              <div style="text-align: right;"><span class="badge badge-outline">ADMISSIONS & SCHOLARSHIPS</span></div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.5rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;">Higher Education &
+                Global Universities</h3>
+              <p style="font-size: 1.05rem; color: var(--color-blue-royal); font-weight: var(--fw-semibold);">Theme:
+                Global Campuses, Scholarships & Application Roadmaps</p>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Comprehensive roadmaps to Central Universities (JNU, Jamia, EFLU, DU) and international universities
+                (Al-Azhar, Qatar, Turkey, UK). Overview of ICCR, Commonwealth, and international fellowship
+                applications.
+              </p>
+            </div>
+            <a href="pages/day-04.html" class="btn btn-outline" style="align-self: flex-start;">
+              <span data-i18n="journey.viewDayDetails">View Full Day Schedule →</span>
+            </a>
+          </div>
+
+          <!-- Day 05 Panel -->
+          <div class="journey-card journey-day-panel" data-day="day05" style="display: none;">
+            <div class="journey-card-header">
+              <div>
+                <span class="badge badge-royal">DEC 25 • FRIDAY</span>
+                <div class="journey-card-day-num">DAY 05</div>
+              </div>
+              <div style="text-align: right;"><span class="badge badge-emerald">DIALECTICS & WRITING</span></div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.5rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;">Critical Thinking &
+                Academic Writing</h3>
+              <p style="font-size: 1.05rem; color: var(--color-blue-royal); font-weight: var(--fw-semibold);">Theme:
+                Paper Publishing, Literature Review & Dialectics</p>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Practical abstract writing labs, Statement of Purpose (SOP) crafting, and classical Munazarah
+                dialectics. Participants present simulated research proposals before expert panels.
+              </p>
+            </div>
+            <a href="pages/day-05.html" class="btn btn-outline" style="align-self: flex-start;">
+              <span data-i18n="journey.viewDayDetails">View Full Day Schedule →</span>
+            </a>
+          </div>
+
+          <!-- Day 06 Panel -->
+          <div class="journey-card journey-day-panel" data-day="day06" style="display: none;">
+            <div class="journey-card-header">
+              <div>
+                <span class="badge badge-royal">DEC 26 • SATURDAY</span>
+                <div class="journey-card-day-num">DAY 06</div>
+              </div>
+              <div style="text-align: right;"><span class="badge badge-outline">LEADERSHIP & ETHICS</span></div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.5rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;">Leadership, Ethics &
+                Community Impact</h3>
+              <p style="font-size: 1.05rem; color: var(--color-blue-royal); font-weight: var(--fw-semibold);">Theme:
+                Social Stewardship & Educational Reform</p>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Scholars as architects of society. Ethical leadership in higher education, community development
+                initiatives, civil service pathways, and social stewardship for Dars graduates.
+              </p>
+            </div>
+            <a href="pages/day-06.html" class="btn btn-outline" style="align-self: flex-start;">
+              <span data-i18n="journey.viewDayDetails">View Full Day Schedule →</span>
+            </a>
+          </div>
+
+          <!-- Day 07 Panel -->
+          <div class="journey-card journey-day-panel" data-day="day07" style="display: none;">
+            <div class="journey-card-header">
+              <div>
+                <span class="badge badge-emerald">DEC 27 • SUNDAY</span>
+                <div class="journey-card-day-num">DAY 07</div>
+              </div>
+              <div style="text-align: right;"><span class="badge badge-royal">VALEDICTORY & CERTIFICATES</span></div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.5rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;">The Horizon of
+                Tomorrow (Valedictory)</h3>
+              <p style="font-size: 1.05rem; color: var(--color-blue-royal); font-weight: var(--fw-semibold);">Theme:
+                Action Plan, Mentorship Pledges & Certification</p>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Finalizing one-year individualized higher studies action plans. Formal valedictory session, mentorship
+                pledge signing, digital certificate presentations, and closing du'a.
+              </p>
+            </div>
+            <a href="pages/day-07.html" class="btn btn-outline" style="align-self: flex-start;">
+              <span data-i18n="journey.viewDayDetails">View Full Day Schedule →</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. CAMP HIGHLIGHTS -->
+    <section class="section-spacer" id="highlights" aria-labelledby="highlights-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="highlights.eyebrow">05 // What Makes It Unique</span>
+          <h2 class="section-title" id="highlights-title" data-i18n="highlights.title">Distinctive Camp Highlights</h2>
+          <p class="section-desc" data-i18n="highlights.subtitle">
+            Six cornerstones that distinguish AL-IRTIQA-26 as a premiere educational orientation.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div class="card-elevation reveal-fade-up">
+            <span class="badge badge-royal" style="margin-bottom: 0.5rem;">Spiritual & Discipline</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="highlights.h1Title">Residential Dars Routine</h3>
+            <p style="font-size: 0.9rem;" data-i18n="highlights.h1Desc">Spiritual discipline combining Tahajjud, Dars
+              halaqas, and focused mutala'a sessions.</p>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-100">
+            <span class="badge badge-emerald" style="margin-bottom: 0.5rem;">Languages</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="highlights.h2Title">Trilingual Communication Labs</h3>
+            <p style="font-size: 0.9rem;" data-i18n="highlights.h2Desc">Practical debates, impromptu discourse, and
+              academic paper reading in Arabic, English, and Urdu.</p>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-200">
+            <span class="badge badge-royal" style="margin-bottom: 0.5rem;">University Admissions</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="highlights.h3Title">Admission Blueprint Workshops</h3>
+            <p style="font-size: 0.9rem;" data-i18n="highlights.h3Desc">Step-by-step guidance on JNU, Jamia Millia,
+              EFLU, DU, Aligarh, and international admissions.</p>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-100">
+            <span class="badge badge-emerald" style="margin-bottom: 0.5rem;">Dialectics & Debate</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="highlights.h4Title">Munazarah Dialectics</h3>
+            <p style="font-size: 0.9rem;" data-i18n="highlights.h4Desc">Honing classical Islamic logic (Mantiq) and
+              contemporary argumentation techniques.</p>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-200">
+            <span class="badge badge-royal" style="margin-bottom: 0.5rem;">Faculty Mentors</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="highlights.h5Title">Certified Mentors & Trainers</h3>
+            <p style="font-size: 0.9rem;" data-i18n="highlights.h5Desc">Mentorship by recognized educational trainers,
+              university scholars, and ADSA alumni.</p>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-300">
+            <span class="badge badge-emerald" style="margin-bottom: 0.5rem;">Digital Experience</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="highlights.h6Title">Digital Student Portal</h3>
+            <p style="font-size: 0.9rem;" data-i18n="highlights.h6Desc">Personal student dashboard, digital ID card,
+              session check-ins, and verified certificates.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. SPEAKERS AND RESOURCE PERSONS -->
+    <section class="section-spacer" id="speakers-preview" style="background: var(--color-blue-pale);"
+      aria-labelledby="speakers-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="speakers.eyebrow">06 // Mentors & Resource Persons</span>
+          <h2 class="section-title royal-gradient-text" id="speakers-title" data-i18n="speakers.title">Speakers &
+            Academic Guides</h2>
+          <p class="section-desc" data-i18n="speakers.subtitle">
+            Led by renowned scholars, university professors, and seasoned educational strategists.
+          </p>
+        </div>
+
+        <div class="speakers-grid">
+          <!-- Chief Patron Card -->
+          <div class="speaker-card speaker-card-patron reveal-fade-up">
+            <div class="speaker-avatar-wrap" style="width: 90px; height: 90px; border-width: 3px;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <span class="badge badge-royal" data-i18n="speakers.patronBadge">Chief Patron & Keynote</span>
+            <h3 class="speaker-name" data-i18n="speakers.patronName">Dr. C.K. Muhammed Abdurahman Al Faizy Al Azhari
+            </h3>
+            <p class="speaker-title" data-i18n="speakers.patronTitle">Principal Mudarris, Alathurpadi Dars & Member,
+              Samastha Consultative Council</p>
+          </div>
+
+          <!-- Structured Placeholder Mentors -->
+          <div class="speaker-card reveal-fade-up delay-100">
+            <div class="speaker-avatar-wrap">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+              </svg>
+            </div>
+            <span class="badge badge-outline" data-i18n="speakers.mentor1Role">Classical Fiqh & Pedagogy</span>
+            <h3 class="speaker-name" data-i18n="speakers.mentor1Name">[Senior Dars Faculty]</h3>
+            <p class="speaker-title" data-i18n="speakers.mentor1Title">Faculty of Classical Jurisprudence & Hermeneutics
+            </p>
+          </div>
+
+          <div class="speaker-card reveal-fade-up delay-200">
+            <div class="speaker-avatar-wrap" style="border-color: var(--color-emerald); color: var(--color-emerald);">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+              </svg>
+            </div>
+            <span class="badge badge-emerald" data-i18n="speakers.mentor2Role">Higher Studies & Career Guidance</span>
+            <h3 class="speaker-name" data-i18n="speakers.mentor2Name">[Senior Educational Strategist]</h3>
+            <p class="speaker-title" data-i18n="speakers.mentor2Title">Higher Education Wing & Scholarship Specialist
+            </p>
+          </div>
+
+          <div class="speaker-card reveal-fade-up delay-300">
+            <div class="speaker-avatar-wrap">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
+            </div>
+            <span class="badge badge-outline" data-i18n="speakers.mentor3Role">Academic Languages Faculty</span>
+            <h3 class="speaker-name" data-i18n="speakers.mentor3Name">[Trilingual Language Expert]</h3>
+            <p class="speaker-title" data-i18n="speakers.mentor3Title">Functional Arabic & Academic English Specialist
+            </p>
+          </div>
+
+          <div class="speaker-card reveal-fade-up delay-400">
+            <div class="speaker-avatar-wrap" style="border-color: var(--color-emerald); color: var(--color-emerald);">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="8.5" cy="7" r="4" />
+                <polyline points="17 11 19 13 23 9" />
+              </svg>
+            </div>
+            <span class="badge badge-emerald" data-i18n="speakers.mentor4Role">ADSA Committee Representative</span>
+            <h3 class="speaker-name" data-i18n="speakers.mentor4Name">[ADSA Leadership Coordinator]</h3>
+            <p class="speaker-title" data-i18n="speakers.mentor4Title">Alathurpadi Dars Students' Association</p>
+          </div>
+        </div>
+
+        <p style="text-align: center; font-size: 0.8125rem; color: var(--text-muted); margin-top: var(--space-lg);"
+          data-i18n="speakers.placeholderNotice">
+          Official speaker bios and photo confirmations will be updated upon final committee publication.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- 10. GLOBAL HIGHER-EDUCATION EXPERIENCE -->
+    <section class="section-spacer" id="global-studies" aria-labelledby="global-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="globalStudies.eyebrow">07 // Global Destinations</span>
+          <h2 class="section-title" id="global-title" data-i18n="globalStudies.title">Global Higher-Education Horizons
+          </h2>
+          <p class="section-desc" data-i18n="globalStudies.subtitle">
+            Explore pathways to premier universities in India and around the globe.
+          </p>
+        </div>
+
+        <div class="global-map-card reveal-scale-up">
+          <div style="max-width: 780px;">
+            <span class="badge badge-emerald" style="margin-bottom: 0.75rem;">Global University Gateways</span>
+            <h3 style="font-size: 1.85rem; color: #FFFFFF; margin-bottom: 1rem;">From Alathurpadi to World-Renowned
+              Campuses</h3>
+            <p style="color: #CBD5E1; line-height: 1.7; font-size: 1rem;">
+              Dars scholars possess rigorous analytical training in classical hermeneutics. AL-IRTIQA-26 equips them
+              with the standardized entrance strategies, linguistic credentials, and research proposals to succeed in
+              competitive international admissions.
+            </p>
+
+            <h4 style="color: var(--color-emerald-light); margin-top: 1.5rem; font-size: 1.1rem;"
+              data-i18n="globalStudies.destIndia">Premier Indian Universities</h4>
+            <div class="global-univ-pills">
+              <span class="univ-pill">Jawaharlal Nehru University (JNU)</span>
+              <span class="univ-pill">Jamia Millia Islamia</span>
+              <span class="univ-pill">EFLU Hyderabad</span>
+              <span class="univ-pill">Delhi University (DU)</span>
+              <span class="univ-pill">Aligarh Muslim University (AMU)</span>
+              <span class="univ-pill">MANUU</span>
+            </div>
+
+            <h4 style="color: var(--color-emerald-light); margin-top: 1.25rem; font-size: 1.1rem;"
+              data-i18n="globalStudies.destInternational">International Universities</h4>
+            <div class="global-univ-pills">
+              <span class="univ-pill">Al-Azhar University, Egypt</span>
+              <span class="univ-pill">Qatar University</span>
+              <span class="univ-pill">Marmara University, Turkey</span>
+              <span class="univ-pill">Oxford University</span>
+              <span class="univ-pill">Cambridge University</span>
+              <span class="univ-pill">SOAS University of London</span>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <span class="badge badge-royal"
+                style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.3);"
+                data-i18n="globalStudies.scholarshipsTitle">Targeted Scholarships</span>
+              <p style="font-size: 0.875rem; color: #CBD5E1; margin-top: 0.5rem;"
+                data-i18n="globalStudies.scholarshipsDesc">
+                Guidance for ICCR, Commonwealth, Chevening, Erasmus+, Turkiye Burslari, and National Research
+                Fellowships.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 11. ACTIVITIES AND WORKSHOPS -->
+    <section class="section-spacer" id="activities-preview" style="background: var(--color-offwhite);"
+      aria-labelledby="activities-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="activities.eyebrow">08 // Academic Immersion</span>
+          <h2 class="section-title royal-gradient-text" id="activities-title" data-i18n="activities.title">Interactive
+            Workshops & Activities</h2>
+          <p class="section-desc" data-i18n="activities.subtitle">
+            Hands-on learning environments that bridge theory with real-world practice.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-4">
+          <div class="card-elevation reveal-fade-up">
+            <span class="badge badge-royal" style="margin-bottom: 0.5rem;">Writing</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="activities.act1Title">Academic Writing Labs</h3>
+            <p style="font-size: 0.875rem;" data-i18n="activities.act1Desc">Abstract drafting, thesis structuring, and
+              citations.</p>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-100">
+            <span class="badge badge-emerald" style="margin-bottom: 0.5rem;">Interviews</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="activities.act2Title">Mock Interview Halaqas</h3>
+            <p style="font-size: 0.875rem;" data-i18n="activities.act2Desc">Live simulated university and scholarship
+              panel interviews.</p>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-200">
+            <span class="badge badge-royal" style="margin-bottom: 0.5rem;">Debate</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="activities.act3Title">Trilingual Debate Circles</h3>
+            <p style="font-size: 0.875rem;" data-i18n="activities.act3Desc">Formal debate rounds in Arabic, English, and
+              Urdu.</p>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-300">
+            <span class="badge badge-emerald" style="margin-bottom: 0.5rem;">Research</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+              data-i18n="activities.act4Title">Scholarly Research Circles</h3>
+            <p style="font-size: 0.875rem;" data-i18n="activities.act4Desc">Deep textual analysis of classical
+              manuscripts and contemporary papers.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 12. GALLERY HIGHLIGHTS WITH LIGHTBOX VIEWER -->
+    <section class="section-spacer" id="gallery-preview" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="gallery.eyebrow">09 // Visual Journey</span>
+          <h2 class="section-title" id="gallery-title" data-i18n="gallery.title">Camp Moments & Life at Alathurpadi</h2>
+          <p class="section-desc" data-i18n="gallery.subtitle">
+            Snapshots of past camps, dars halaqas, and student achievements. Click any photograph to view in full
+            screen.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal-fade-up" data-lightbox-src="assets/images/gallery/gallery-campus-main.png"
+            data-lightbox-caption="Alathurpadi Dars Halaqatudduroos Campus Atmosphere">
+            <img src="assets/images/gallery/gallery-campus-main.png" alt="Campus Atmosphere" class="gallery-item-img"
+              loading="lazy">
+            <div class="gallery-item-overlay">
+              <span style="font-weight: var(--fw-semibold);">Alathurpadi Dars Campus</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-fade-up delay-100"
+            data-lightbox-src="assets/images/gallery/gallery-session.png"
+            data-lightbox-caption="Intensive Academic Lecture Session">
+            <img src="assets/images/gallery/gallery-session.png" alt="Academic Session" class="gallery-item-img"
+              loading="lazy">
+            <div class="gallery-item-overlay">
+              <span style="font-weight: var(--fw-semibold);">Higher Studies Lecture Session</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-fade-up delay-200" data-lightbox-src="assets/images/gallery/gallery-hall.png"
+            data-lightbox-caption="Camp Assembly & Plenary Hall">
+            <img src="assets/images/gallery/gallery-hall.png" alt="Camp Plenary Hall" class="gallery-item-img"
+              loading="lazy">
+            <div class="gallery-item-overlay">
+              <span style="font-weight: var(--fw-semibold);">Camp Plenary Hall</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-fade-up delay-100"
+            data-lightbox-src="assets/images/gallery/gallery-orientation.png"
+            data-lightbox-caption="Interactive Student Mentoring">
+            <img src="assets/images/gallery/gallery-orientation.png" alt="Student Mentoring" class="gallery-item-img"
+              loading="lazy">
+            <div class="gallery-item-overlay">
+              <span style="font-weight: var(--fw-semibold);">One-on-One Mentoring</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-fade-up delay-200"
+            data-lightbox-src="assets/images/gallery/gallery-discussion.jpeg"
+            data-lightbox-caption="Group Discussion Circle">
+            <img src="assets/images/gallery/gallery-discussion.jpeg" alt="Group Discussion" class="gallery-item-img"
+              loading="lazy">
+            <div class="gallery-item-overlay">
+              <span style="font-weight: var(--fw-semibold);">Discussion Halqa</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-fade-up delay-300"
+            data-lightbox-src="assets/images/gallery/gallery-workshop.png"
+            data-lightbox-caption="Hands-on Workshop Activity">
+            <img src="assets/images/gallery/gallery-workshop.png" alt="Workshop Activity" class="gallery-item-img"
+              loading="lazy">
+            <div class="gallery-item-overlay">
+              <span style="font-weight: var(--fw-semibold);">Linguistic Workshop</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 13. STUDENT RESOURCES -->
+    <section class="section-spacer" id="resources-preview" style="background: var(--color-blue-pale);"
+      aria-labelledby="resources-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="resources.eyebrow">10 // Academic Toolkit</span>
+          <h2 class="section-title royal-gradient-text" id="resources-title" data-i18n="resources.title">Student Guides
+            & Downloads</h2>
+          <p class="section-desc" data-i18n="resources.subtitle">
+            Curated documents to accelerate your higher education journey.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-4">
+          <div class="card-elevation reveal-fade-up" style="background: #FFFFFF;">
+            <span class="badge badge-royal" data-i18n="resources.res1Type">PDF • 2.4 MB</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin: 0.75rem 0;"
+              data-i18n="resources.res1Title">Camp Syllabus & Handbook 2026</h3>
+            <a href="pages/resources.html" class="btn btn-outline btn-sm" style="width: 100%;"
+              data-i18n="resources.btnDownload">Download Preview</a>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-100" style="background: #FFFFFF;">
+            <span class="badge badge-emerald" data-i18n="resources.res2Type">PDF • 4.1 MB</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin: 0.75rem 0;"
+              data-i18n="resources.res2Title">Central Universities Admission Guide</h3>
+            <a href="pages/resources.html" class="btn btn-outline btn-sm" style="width: 100%;"
+              data-i18n="resources.btnDownload">Download Preview</a>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-200" style="background: #FFFFFF;">
+            <span class="badge badge-royal" data-i18n="resources.res3Type">PDF • 1.8 MB</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin: 0.75rem 0;"
+              data-i18n="resources.res3Title">International Scholarship Checklist</h3>
+            <a href="pages/resources.html" class="btn btn-outline btn-sm" style="width: 100%;"
+              data-i18n="resources.btnDownload">Download Preview</a>
+          </div>
+
+          <div class="card-elevation reveal-fade-up delay-300" style="background: #FFFFFF;">
+            <span class="badge badge-emerald" data-i18n="resources.res4Type">DOCX / PDF • 1.2 MB</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin: 0.75rem 0;"
+              data-i18n="resources.res4Title">Academic CV & Statement of Purpose Kit</h3>
+            <a href="pages/resources.html" class="btn btn-outline btn-sm" style="width: 100%;"
+              data-i18n="resources.btnDownload">Download Preview</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 14. TESTIMONIALS -->
+    <section class="section-spacer" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="testimonials.eyebrow">11 // Voices of Impact</span>
+          <h2 class="section-title" id="testimonials-title" data-i18n="testimonials.title">What Our Scholars & Mentors
+            Say</h2>
+        </div>
+
+        <div class="grid grid-cols-2">
+          <div class="card-featured reveal-fade-up">
+            <p style="font-size: 1.125rem; font-style: italic; line-height: 1.7; color: var(--text-primary); margin-bottom: 1.25rem;"
+              data-i18n="testimonials.quote1">
+              “The seven days at Al-Irtiqa gave me the exact compass I needed. Transitioning from the dars to an
+              international university was made seamless by the mentors here.”
+            </p>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <div
+                style="width: 44px; height: 44px; border-radius: 50%; background: var(--color-blue-pale); color: var(--color-blue-royal); display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                AK</div>
+              <div>
+                <strong style="color: var(--color-blue-deep);">Alathurpadi Dars Alumnus</strong>
+                <p style="font-size: 0.8125rem; color: var(--text-muted); margin: 0;" data-i18n="testimonials.author1">
+                  Dars Graduate & Central University Research Scholar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-featured reveal-fade-up delay-100" style="border-color: var(--color-emerald-border);">
+            <p style="font-size: 1.125rem; font-style: italic; line-height: 1.7; color: var(--text-primary); margin-bottom: 1.25rem;"
+              data-i18n="testimonials.quote2">
+              “A ground-breaking initiative that preserves our sacred traditions while unleashing our students'
+              potentials across world-class campuses.”
+            </p>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <div
+                style="width: 44px; height: 44px; border-radius: 50%; background: var(--color-mint-pale); color: var(--color-emerald-deep); display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                UM</div>
+              <div>
+                <strong style="color: var(--color-blue-deep);">Senior Dars Faculty</strong>
+                <p style="font-size: 0.8125rem; color: var(--text-muted); margin: 0;" data-i18n="testimonials.author2">
+                  Senior Mudarris & Academic Advisor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 15. LATEST ANNOUNCEMENTS -->
+    <section class="section-spacer" id="announcements" style="background: var(--color-offwhite);"
+      aria-labelledby="announcements-title">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-eyebrow" data-i18n="announcements.eyebrow">12 // Official Noticeboard</span>
+          <h2 class="section-title royal-gradient-text" id="announcements-title" data-i18n="announcements.title">Latest
+            News & Camp Updates</h2>
+          <p class="section-desc" data-i18n="announcements.subtitle">
+            Stay updated with important timelines, admissions, and orientation notes.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div class="notice-card reveal-fade-up">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                <span class="badge badge-royal" data-i18n="announcements.tagImportant">Important</span>
+                <span style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="announcements.news1Date">November
+                  2026</span>
+              </div>
+              <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+                data-i18n="announcements.news1Title">
+                Official Registration Demo Now Open for SUFFA Graduates
+              </h3>
+            </div>
+            <a href="student/login.html" class="btn btn-ghost btn-sm"
+              style="align-self: flex-start; margin-top: 1rem;">View Registration Demo →</a>
+          </div>
+
+          <div class="notice-card reveal-fade-up delay-100">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                <span class="badge badge-emerald" data-i18n="announcements.tagSchedule">Update</span>
+                <span style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="announcements.news2Date">November
+                  2026</span>
+              </div>
+              <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+                data-i18n="announcements.news2Title">
+                Preliminary Seven-Day Curriculum Outline Published
+              </h3>
+            </div>
+            <a href="#journey-preview" class="btn btn-ghost btn-sm"
+              style="align-self: flex-start; margin-top: 1rem;">Explore Schedule →</a>
+          </div>
+
+          <div class="notice-card reveal-fade-up delay-200">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                <span class="badge badge-outline" data-i18n="announcements.tagNotice">Notice</span>
+                <span style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="announcements.news3Date">November
+                  2026</span>
+              </div>
+              <h3 style="font-size: 1.15rem; color: var(--color-blue-deep); margin-bottom: 0.5rem;"
+                data-i18n="announcements.news3Title">
+                Campus Accommodation & Reporting Instructions
+              </h3>
+            </div>
+            <a href="pages/about.html" class="btn btn-ghost btn-sm"
+              style="align-self: flex-start; margin-top: 1rem;">Read Instructions →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 16. FINAL CALL-TO-ACTION -->
+    <section class="section-spacer" id="final-cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-banner reveal-scale-up">
+          <div style="max-width: 720px; margin: 0 auto; position: relative; z-index: 1;">
+            <h2 id="cta-title"
+              style="font-size: clamp(1.85rem, 2.4vw + 1rem, 2.75rem); color: #FFFFFF; margin-bottom: 1rem;"
+              data-i18n="cta.title">
+              Ready to Ascend Towards Your Horizon?
+            </h2>
+            <p style="font-size: 1.125rem; color: #E0E7FF; line-height: 1.6; margin-bottom: 2rem;"
+              data-i18n="cta.subtitle">
+              Join the seven-day educational orientation that redefines the future of dars graduates.
+            </p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+              <a href="student/login.html" class="btn btn-lg"
+                style="background: #FFFFFF; color: var(--color-blue-royal); font-weight: var(--fw-bold); box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+                <span data-i18n="cta.btnPrimary">Access Student Portal Demo</span>
+              </a>
+              <a href="pages/contact.html" class="btn btn-lg"
+                style="background: rgba(255, 255, 255, 0.15); color: #FFFFFF; border: 1.5px solid rgba(255, 255, 255, 0.4); backdrop-filter: blur(8px);">
+                <span data-i18n="cta.btnSecondary">Contact Camp Desk</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Image Lightbox Modal for Gallery -->
+  <div id="image-lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox Viewer">
+    <div class="lightbox-container">
+      <button type="button" class="lightbox-close-btn" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightbox-img">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       17. COMPLETE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand & Heritage -->
+        <div class="footer-brand-col">
+          <div class="footer-brand-logo-wrap">
+            <div class="footer-logo-badge">
+              <img src="assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo"
+                class="footer-brand-logo-img">
+            </div>
+            <img src="assets/images/brand/adsa-logo.png" alt="ADSA Logo" class="footer-org-logo"
+              title="Organized by ADSA">
+            <div class="footer-adsa-badge" title="Alathurpadi Dars Students' Association">
+              <img src="assets/images/brand/adsa-official-logo.png" alt="ADSA Official Logo" class="footer-adsa-img">
+            </div>
+          </div>
+          <p class="footer-desc" data-i18n="footer.aboutText">
+            Organized by Alathurpadi Dars Students' Association (ADSA), fostering intellectual elevation, scholarly
+            rigor, and international academic opportunities for future leaders.
+          </p>
+          <div class="footer-organizers">
+            <img src="assets/images/brand/suffa-logo.png" alt="SUFFA Logo" class="footer-org-logo"
+              title="SUFFA Dars Network">
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.quickLinksTitle">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link" data-i18n="nav.home">Home</a></li>
+            <li><a href="pages/about.html" class="footer-link" data-i18n="nav.about">About Camp</a></li>
+            <li><a href="pages/theme.html" class="footer-link" data-i18n="nav.theme">Thematic Vision</a></li>
+            <li><a href="pages/people.html" class="footer-link" data-i18n="nav.people">Speakers & Mentors</a></li>
+            <li><a href="pages/gallery.html" class="footer-link" data-i18n="nav.gallery">Media Gallery</a></li>
+            <li><a href="pages/resources.html" class="footer-link" data-i18n="nav.resources">Academic Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: The Seven Days Journey -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.journeyTitle">The 7 Days</h4>
+          <ul class="footer-links-list">
+            <li><a href="pages/day-01.html" class="footer-link">Day 01 — Foundations</a></li>
+            <li><a href="pages/day-02.html" class="footer-link">Day 02 — Wisdom & Modernity</a></li>
+            <li><a href="pages/day-03.html" class="footer-link">Day 03 — Power of Languages</a></li>
+            <li><a href="pages/day-04.html" class="footer-link">Day 04 — Global Universities</a></li>
+            <li><a href="pages/day-05.html" class="footer-link">Day 05 — Critical Writing</a></li>
+            <li><a href="pages/day-06.html" class="footer-link">Day 06 — Leadership Ethics</a></li>
+            <li><a href="pages/day-07.html" class="footer-link">Day 07 — Horizon of Tomorrow</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Venue & Portals -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.venueTitle">Campus & Portals</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              style="flex-shrink: 0; color: var(--color-emerald);">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>Alathurpadi Dars, Melmuri, Malappuram, Kerala - 673517</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              style="flex-shrink: 0; color: var(--color-emerald);">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>+91 90745 25205</span>
+          </div>
+
+          <div style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <a href="student/login.html" class="btn btn-primary btn-sm" style="width: 100%;">
+              <span data-i18n="nav.studentPortal">Student Portal Demo</span>
+            </a>
+            <a href="admin/login.html" class="btn btn-outline btn-sm"
+              style="width: 100%; border: 1px dashed rgba(255, 255, 255, 0.4); color: #FFFFFF; background: transparent;">
+              <span data-i18n="nav.adminDashboard">Admin Dashboard Demo</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 AL-IRTIQA-26. <span data-i18n="footer.rightsReserved">All rights reserved.</span>
+        </div>
+        <div class="footer-demo-notice" data-i18n="footer.demoNotice">
+          Frontend Prototype Demo Mode — No backend connected.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Stack (Vanilla Modular JS) -->
+  <script src="assets/data/site-data.js"></script>
+  <script src="assets/data/translations/en.js"></script>
+  <script src="assets/data/translations/ml.js"></script>
+  <script src="assets/data/translations/ar.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Gallery & Camp Chronicles — AL-IRTIQA-26</title>
+  <meta name="description" content="Visual chronicles, plenary keynotes, workshops, video documentaries, and camp memories from AL-IRTIQA-26 Higher Studies Camp.">
+  <link rel="icon" type="image/png" href="../assets/images/al-irtiqa-26-logo.png">
+  
+  <!-- Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Core Design System CSS -->
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    <div class="container announcement-content">
+      <div class="announcement-left">
+        <span class="badge badge-emerald" data-i18n="announcement.badge">ADSA • SUFFA</span>
+        <span class="announcement-text" data-i18n="announcement.text">
+          AL-IRTIQA-26 // 7-Day Residential Higher-Studies Orientation • 21 – 27 December 2026
+        </span>
+      </div>
+      <div class="announcement-right">
+        <a href="contact.html" class="announcement-link" data-i18n="announcement.supportLink">Helpdesk</a>
+        <span class="announcement-sep">•</span>
+        <a href="updates.html" class="announcement-link" data-i18n="announcement.noticeLink">Noticeboard</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Header & Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <!-- Dual Brand Lockup -->
+      <a href="../index.html" class="nav-brand" aria-label="AL-IRTIQA-26 Homepage">
+        <div class="nav-brand-lockup">
+          <img src="../assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo" class="nav-brand-logo-img">
+          <span class="nav-brand-divider"></span>
+          <img src="../assets/images/brand/adsa-official-logo.png" alt="ADSA Official Logo" class="nav-adsa-logo-img">
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li class="nav-item"><a href="theme.html" class="nav-link" data-i18n="nav.theme">Theme</a></li>
+
+          <!-- Dropdown: The Seven Days -->
+          <li class="nav-item nav-item-dropdown">
+            <a href="journey.html" class="nav-link nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              <span data-i18n="nav.journey">7 Days</span>
+              <svg class="nav-dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="journey.html" class="nav-dropdown-link" role="menuitem">
+                <strong>Overview (All 7 Days)</strong>
+              </a>
+              <hr style="border: none; border-top: 1px solid var(--border-light); margin: 4px 0;">
+              <a href="day-01.html" class="nav-dropdown-link" role="menuitem">Day 01 — Inauguration</a>
+              <a href="day-02.html" class="nav-dropdown-link" role="menuitem">Day 02 — Higher Studies</a>
+              <a href="day-03.html" class="nav-dropdown-link" role="menuitem">Day 03 — Study Methods</a>
+              <a href="day-04.html" class="nav-dropdown-link" role="menuitem">Day 04 — Language Skills</a>
+              <a href="day-05.html" class="nav-dropdown-link" role="menuitem">Day 05 — Digital & Soft Skills</a>
+              <a href="day-06.html" class="nav-dropdown-link" role="menuitem">Day 06 — Leadership & Service</a>
+              <a href="day-07.html" class="nav-dropdown-link" role="menuitem">Day 07 — Reflections & Closing</a>
+            </div>
+          </li>
+
+          <!-- Dropdown: Program & Campus Life -->
+          <li class="nav-item nav-item-dropdown">
+            <a href="activities.html" class="nav-link nav-dropdown-trigger active" aria-haspopup="true" aria-expanded="false">
+              <span>Program & Life</span>
+              <svg class="nav-dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="activities.html" class="nav-dropdown-link" role="menuitem">Activities & Workshops</a>
+              <a href="food-dining.html" class="nav-dropdown-link" role="menuitem">
+                <strong>Food & Dining (7 Days)</strong>
+              </a>
+              <a href="global-study.html" class="nav-dropdown-link" role="menuitem">Global Universities</a>
+              <a href="gallery.html" class="nav-dropdown-link active" role="menuitem">Media Gallery</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="people.html" class="nav-link" data-i18n="nav.people">Speakers</a></li>
+          <li class="nav-item"><a href="resources.html" class="nav-link" data-i18n="nav.resources">Resources</a></li>
+          <li class="nav-item"><a href="updates.html" class="nav-link" data-i18n="nav.updates">Updates</a></li>
+          <li class="nav-item"><a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="header-actions">
+        <!-- Multilingual Switcher -->
+        <div class="lang-switcher" role="group" aria-label="Language Selector">
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="ml" aria-pressed="false">മല</button>
+          <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">عر</button>
+        </div>
+
+        <!-- Student Portal CTA Button -->
+        <a href="../student/login.html" class="btn btn-primary btn-sm nav-cta-btn btn-magnetic" data-magnetic="true">
+          <span data-i18n="nav.studentPortal">Student Portal</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button type="button" class="nav-toggle-btn" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="mobile-nav-top">
+      <div class="nav-brand-lockup" style="margin-bottom: 1.25rem;">
+        <img src="../assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo" style="height: 32px; width: auto;">
+        <span class="nav-brand-divider"></span>
+        <img src="../assets/images/brand/adsa-official-logo.png" alt="ADSA Logo" style="height: 28px; width: auto;">
+      </div>
+
+      <div class="mobile-nav-group-title">Overview</div>
+      <div class="mobile-sub-grid">
+        <a href="../index.html" class="mobile-sub-link">Home</a>
+        <a href="about.html" class="mobile-sub-link">About Camp</a>
+        <a href="theme.html" class="mobile-sub-link">Theme Vision</a>
+        <a href="people.html" class="mobile-sub-link">Speakers</a>
+      </div>
+
+      <div class="mobile-nav-group-title">The Seven Days</div>
+      <div class="mobile-sub-grid">
+        <a href="journey.html" class="mobile-sub-link">7 Days Overview</a>
+        <a href="day-01.html" class="mobile-sub-link">Day 01</a>
+        <a href="day-02.html" class="mobile-sub-link">Day 02</a>
+        <a href="day-03.html" class="mobile-sub-link">Day 03</a>
+        <a href="day-04.html" class="mobile-sub-link">Day 04</a>
+        <a href="day-05.html" class="mobile-sub-link">Day 05</a>
+        <a href="day-06.html" class="mobile-sub-link">Day 06</a>
+        <a href="day-07.html" class="mobile-sub-link">Day 07</a>
+      </div>
+
+      <div class="mobile-nav-group-title">Program & Campus</div>
+      <div class="mobile-sub-grid">
+        <a href="activities.html" class="mobile-sub-link">Activities</a>
+        <a href="food-dining.html" class="mobile-sub-link">Food & Dining</a>
+        <a href="global-study.html" class="mobile-sub-link">Global Study</a>
+        <a href="gallery.html" class="mobile-sub-link active">Gallery</a>
+        <a href="resources.html" class="mobile-sub-link">Resources</a>
+        <a href="updates.html" class="mobile-sub-link">Updates</a>
+        <a href="faq.html" class="mobile-sub-link">FAQ</a>
+        <a href="contact.html" class="mobile-sub-link">Contact</a>
+      </div>
+
+      <div class="mobile-nav-group-title">Portals (Demo)</div>
+      <div class="mobile-sub-grid">
+        <a href="../student/login.html" class="mobile-sub-link" style="color: var(--color-blue-royal); font-weight: bold;">Student Portal</a>
+        <a href="../admin/login.html" class="mobile-sub-link" style="color: var(--color-emerald); font-weight: bold;">Admin Demo</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="../index.html" class="breadcrumb-link">Home</a></li>
+            <li class="breadcrumb-item">/</li>
+            <li class="breadcrumb-item"><span class="breadcrumb-current">Gallery</span></li>
+          </ol>
+        </nav>
+        <span class="page-hero-badge">Visual Chronicles & Media Hub</span>
+        <h1 class="page-hero-title">Media Gallery & Camp Chronicles</h1>
+        <p class="page-hero-subtitle">
+          An immersive photographic, documentary, and memory showcase capturing plenary lectures, language labs, dining hospitality, and transformative moments at Alathurpadi Dars.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 1: PHOTO GALLERY -->
+    <section class="section">
+      <div class="container">
+        
+        <!-- Category Filter Tabs -->
+        <div style="text-align: center; margin-bottom: var(--space-md);">
+          <div class="filter-tabs-bar" role="tablist" aria-label="Gallery Category Filters">
+            <button type="button" class="filter-tab-btn gallery-filter-btn active" data-category="all">All Moments</button>
+            <button type="button" class="filter-tab-btn gallery-filter-btn" data-category="campus">Campus & Halaqas</button>
+            <button type="button" class="filter-tab-btn gallery-filter-btn" data-category="sessions">Plenary Sessions</button>
+            <button type="button" class="filter-tab-btn gallery-filter-btn" data-category="workshops">Workshops & Labs</button>
+            <button type="button" class="filter-tab-btn gallery-filter-btn" data-category="dining">Dining & Hospitality</button>
+            <button type="button" class="filter-tab-btn gallery-filter-btn" data-category="memories">Camp Memories</button>
+          </div>
+        </div>
+
+        <!-- Day Filter Secondary Pills -->
+        <div style="display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: var(--space-xl);">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); align-self: center; margin-right: 0.5rem;">Filter by Day:</span>
+          <button type="button" class="gallery-day-btn active" data-day="all" style="padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border-light); background: var(--color-blue-royal); color: #FFF; font-size: 0.75rem; font-weight: 600; cursor: pointer;">All Days</button>
+          <button type="button" class="gallery-day-btn" data-day="day-01" style="padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border-light); background: #FFF; color: var(--text-secondary); font-size: 0.75rem; font-weight: 600; cursor: pointer;">Day 01</button>
+          <button type="button" class="gallery-day-btn" data-day="day-02" style="padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border-light); background: #FFF; color: var(--text-secondary); font-size: 0.75rem; font-weight: 600; cursor: pointer;">Day 02</button>
+          <button type="button" class="gallery-day-btn" data-day="day-03" style="padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border-light); background: #FFF; color: var(--text-secondary); font-size: 0.75rem; font-weight: 600; cursor: pointer;">Day 03</button>
+          <button type="button" class="gallery-day-btn" data-day="day-04" style="padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border-light); background: #FFF; color: var(--text-secondary); font-size: 0.75rem; font-weight: 600; cursor: pointer;">Day 04</button>
+          <button type="button" class="gallery-day-btn" data-day="day-05" style="padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border-light); background: #FFF; color: var(--text-secondary); font-size: 0.75rem; font-weight: 600; cursor: pointer;">Day 05</button>
+          <button type="button" class="gallery-day-btn" data-day="day-06" style="padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border-light); background: #FFF; color: var(--text-secondary); font-size: 0.75rem; font-weight: 600; cursor: pointer;">Day 06</button>
+          <button type="button" class="gallery-day-btn" data-day="day-07" style="padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border-light); background: #FFF; color: var(--text-secondary); font-size: 0.75rem; font-weight: 600; cursor: pointer;">Day 07</button>
+        </div>
+
+        <!-- Premium Masonry Grid with Dynamic Spans & Hover Interactions -->
+        <div class="gallery-masonry-grid" id="gallery-grid">
+          
+          <!-- Item 1 -->
+          <div class="gallery-media-item img-zoom-hover" data-category="campus" data-day="day-01" data-index="0" data-lightbox-src="../assets/images/gallery/gallery-hall.png" data-lightbox-title="Inaugural Plenary Hall & Halaqatudduroos" data-lightbox-caption="Solemn assembly of 350+ delegates in the central auditorium of Alathurpadi Dars on opening morning.">
+            <img src="../assets/images/gallery/gallery-hall.png" alt="Inaugural Plenary Hall" class="gallery-thumb-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge badge-royal" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Day 01 • Campus Sanctuary</span>
+              <div style="font-weight: 700; font-size: 1rem; color: #FFFFFF;">Inaugural Plenary Hall</div>
+              <p style="font-size: 0.8125rem; color: #CBD5E1; margin: 4px 0 0;">350+ scholars gathered for the grand opening.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-media-item img-zoom-hover" data-category="sessions" data-day="day-02" data-index="1" data-lightbox-src="../assets/images/gallery/gallery-session.png" data-lightbox-title="Central University Admissions Masterclass" data-lightbox-caption="Faculty providing structured guidance on CUET PG examinations, entrance syllabi, and university interview formats.">
+            <img src="../assets/images/gallery/gallery-session.png" alt="Admissions Masterclass" class="gallery-thumb-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge badge-emerald" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Day 02 • Academic Plenary</span>
+              <div style="font-weight: 700; font-size: 1rem; color: #FFFFFF;">Central Universities Masterclass</div>
+              <p style="font-size: 0.8125rem; color: #CBD5E1; margin: 4px 0 0;">CUET-PG blueprint and admissions roadmaps.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-media-item img-zoom-hover" data-category="workshops" data-day="day-03" data-index="2" data-lightbox-src="../assets/images/gallery/gallery-workshop.png" data-lightbox-title="Academic Writing & SOP Clinic" data-lightbox-caption="Intensive hands-on clinic coaching students to formulate compelling Statements of Purpose for international scholarships.">
+            <img src="../assets/images/gallery/gallery-workshop.png" alt="Writing Clinic" class="gallery-thumb-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge badge-royal" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Day 03 • Writing Lab</span>
+              <div style="font-weight: 700; font-size: 1rem; color: #FFFFFF;">Statement of Purpose (SOP) Clinic</div>
+              <p style="font-size: 0.8125rem; color: #CBD5E1; margin: 4px 0 0;">One-on-one draft critiques and academic structure.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-media-item img-zoom-hover" data-category="workshops" data-day="day-04" data-index="3" data-lightbox-src="../assets/images/gallery/gallery-activity-1.png" data-lightbox-title="Trilingual Dialectics & Toastmasters Halaqa" data-lightbox-caption="Scholars presenting spontaneous research orations in classical Arabic, formal English, and literary Urdu.">
+            <img src="../assets/images/gallery/gallery-activity-1.png" alt="Toastmasters Speech Halaqa" class="gallery-thumb-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge badge-emerald" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Day 04 • Language Lab</span>
+              <div style="font-weight: 700; font-size: 1rem; color: #FFFFFF;">Trilingual Dialectics Halaqa</div>
+              <p style="font-size: 0.8125rem; color: #CBD5E1; margin: 4px 0 0;">Public eloquence and rhetoric training in 3 languages.</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-media-item img-zoom-hover" data-category="sessions" data-day="day-05" data-index="4" data-lightbox-src="../assets/images/gallery/gallery-discussion.jpeg" data-lightbox-caption="Scholarly study circle interrogating logic, epistemology, and philosophical propositions from classical texts." data-lightbox-title="Classical Mantiq & Epistemology Circle">
+            <img src="../assets/images/gallery/gallery-discussion.jpeg" alt="Peer Discussion" class="gallery-thumb-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge badge-royal" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Day 05 • Scholarly Halaqa</span>
+              <div style="font-weight: 700; font-size: 1rem; color: #FFFFFF;">Classical Mantiq Circle</div>
+              <p style="font-size: 0.8125rem; color: #CBD5E1; margin: 4px 0 0;">Deep philosophical dialectics and peer debate.</p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-media-item img-zoom-hover" data-category="dining" data-day="day-02" data-index="5" data-lightbox-src="../assets/images/gallery/gallery-dining.png" data-lightbox-title="Wholesome Dining & Sunnah Hospitality" data-lightbox-caption="Communal dining at the Central Hall adhering to traditional Sunnah etiquette and warm Malabar brotherhood.">
+            <img src="../assets/images/gallery/gallery-dining.png" alt="Communal Dining" class="gallery-thumb-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge badge-emerald" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Day 02 • Camp Life & Food</span>
+              <div style="font-weight: 700; font-size: 1rem; color: #FFFFFF;">Central Dining Hospitality</div>
+              <p style="font-size: 0.8125rem; color: #CBD5E1; margin: 4px 0 0;">Nutritious Malabar cuisine and communal etiquette.</p>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="gallery-media-item img-zoom-hover" data-category="memories" data-day="day-06" data-index="6" data-lightbox-src="../assets/images/gallery/gallery-activity-2.png" data-lightbox-title="Mentorship Circles & Career Advising" data-lightbox-caption="Senior alumni mentors reviewing student resumes, fellowship dossiers, and offering tailored career counseling.">
+            <img src="../assets/images/gallery/gallery-activity-2.png" alt="Mentorship Circles" class="gallery-thumb-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge badge-royal" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Day 06 • Mentorship</span>
+              <div style="font-weight: 700; font-size: 1rem; color: #FFFFFF;">One-on-One Mentorship Circles</div>
+              <p style="font-size: 0.8125rem; color: #CBD5E1; margin: 4px 0 0;">Personalized career roadmap and academic guidance.</p>
+            </div>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="gallery-media-item img-zoom-hover" data-category="sessions" data-day="day-07" data-index="7" data-lightbox-src="../assets/images/gallery/gallery-orientation.png" data-lightbox-title="Valedictory Assembly & Fellowship Awarding" data-lightbox-caption="Closing valedictory ceremony presided by Chief Patron Dr. C.K. Muhammed Abdurahman Al Faizy Al Azhari.">
+            <img src="../assets/images/gallery/gallery-orientation.png" alt="Valedictory Ceremony" class="gallery-thumb-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge badge-emerald" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Day 07 • Valedictory</span>
+              <div style="font-weight: 700; font-size: 1rem; color: #FFFFFF;">Valedictory & Awards Assembly</div>
+              <p style="font-size: 0.8125rem; color: #CBD5E1; margin: 4px 0 0;">Conferral of certificates and alumni pledge.</p>
+            </div>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="gallery-media-item img-zoom-hover" data-category="campus" data-day="day-01" data-index="8" data-lightbox-src="../assets/images/gallery/gallery-campus-main.png" data-lightbox-title="Alathurpadi Dars Courtyard at Twilight" data-lightbox-caption="The serene architectural ambiance of the historic Dars campus under the evening sky.">
+            <img src="../assets/images/gallery/gallery-campus-main.png" alt="Alathurpadi Campus" class="gallery-thumb-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge badge-royal" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Day 01 • Heritage</span>
+              <div style="font-weight: 700; font-size: 1rem; color: #FFFFFF;">Campus Courtyard at Twilight</div>
+              <p style="font-size: 0.8125rem; color: #CBD5E1; margin: 4px 0 0;">Serene spiritual and intellectual sanctuary.</p>
+            </div>
+          </div>
+
+          <!-- Item 10 -->
+          <div class="gallery-media-item img-zoom-hover" data-category="memories" data-day="day-06" data-index="9" data-lightbox-src="../assets/images/gallery/gallery-activity-3.png" data-lightbox-title="Nocturnal Reflections & Campfire Halaqa" data-lightbox-caption="Evening campfire gathering where students shared personal aspirations, poetry, and shared resolutions.">
+            <img src="../assets/images/gallery/gallery-activity-3.png" alt="Nocturnal Reflections" class="gallery-thumb-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge badge-emerald" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Day 06 • Camp Memories</span>
+              <div style="font-weight: 700; font-size: 1rem; color: #FFFFFF;">Campfire Reflections & Poetry</div>
+              <p style="font-size: 0.8125rem; color: #CBD5E1; margin: 4px 0 0;">Camaraderie and intellectual bonding under the stars.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: VIDEO GALLERY & INTERACTIVE CINEMATIC THEATER -->
+    <section class="section" style="background: var(--bg-soft); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        
+        <div style="text-align: center; margin-bottom: var(--space-2xl);">
+          <span class="badge badge-royal" style="margin-bottom: var(--space-xs);">Cinematic Documentation</span>
+          <h2 style="font-size: clamp(1.65rem, 2.5vw, 2.4rem); font-weight: var(--fw-black); color: var(--text-primary); margin: 0;">
+            Video Documentaries & Keynote Archives
+          </h2>
+          <p style="color: var(--text-secondary); max-width: 680px; margin: 0.5rem auto 0; font-size: 1rem;">
+            Click any documentary below to launch the interactive HD video theatre with chapters, waveform analysis, and full session recordings.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-xl);">
+          
+          <!-- Video 1 -->
+          <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <div style="position: relative; height: 210px; background: #0A1633; overflow: hidden;">
+              <img src="../assets/images/gallery/gallery-hall.png" alt="Inaugural Video" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+              <button type="button" class="btn-video-play" data-video-title="AL-IRTIQA-26 Official Inaugural Documentary & Keynote" data-video-category="Inauguration // 18 Mins" data-video-desc="Full cinematic record of the opening ceremony, presidential address by Dr. C.K. Muhammed Abdurahman Al Faizy Al Azhari, and student arrivals." style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 62px; height: 62px; border-radius: 50%; background: var(--color-blue-royal); color: #FFF; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(31,91,169,0.6); transition: transform 0.2s ease;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <span class="badge badge-royal" style="position: absolute; bottom: 12px; left: 12px; font-size: 0.6875rem;">18:45</span>
+            </div>
+            <div style="padding: var(--space-lg); flex-grow: 1; display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; color: var(--color-blue-royal); font-weight: 700; text-transform: uppercase;">Day 01 • Inauguration</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin: 0.4rem 0;">AL-IRTIQA-26 Official Opening & Anthem</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">Presided by Dr. C.K. Muhammed Abdurahman Al Faizy Al Azhari.</p>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <div style="position: relative; height: 210px; background: #0A1633; overflow: hidden;">
+              <img src="../assets/images/gallery/gallery-workshop.png" alt="Debate Finals Video" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+              <button type="button" class="btn-video-play" data-video-title="Trilingual Munazarah Debate Finals & Toastmasters" data-video-category="Language Lab // 24 Mins" data-video-desc="Competitive speech rounds, dialectic argumentation, and eloquence training across Arabic, English, and Urdu." style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 62px; height: 62px; border-radius: 50%; background: var(--color-emerald); color: #FFF; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(17,175,131,0.6); transition: transform 0.2s ease;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <span class="badge badge-emerald" style="position: absolute; bottom: 12px; left: 12px; font-size: 0.6875rem;">24:10</span>
+            </div>
+            <div style="padding: var(--space-lg); flex-grow: 1; display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; color: var(--color-emerald); font-weight: 700; text-transform: uppercase;">Day 04 • Rhetoric & Debate</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin: 0.4rem 0;">Trilingual Debate Finals & Dialectics</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">High-stakes competitive rounds in Arabic, English, and Urdu.</p>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <div style="position: relative; height: 210px; background: #0A1633; overflow: hidden;">
+              <img src="../assets/images/gallery/gallery-session.png" alt="Admissions Video" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+              <button type="button" class="btn-video-play" data-video-title="Global Central Universities & Scholarship Roadmap" data-video-category="Higher Studies // 32 Mins" data-video-desc="Comprehensive masterclass detailing JNU, Jamia, EFLU, DU, and international scholarship applications (Türkiye Bursları, Qatar Govt)." style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 62px; height: 62px; border-radius: 50%; background: var(--color-blue-royal); color: #FFF; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(31,91,169,0.6); transition: transform 0.2s ease;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <span class="badge badge-royal" style="position: absolute; bottom: 12px; left: 12px; font-size: 0.6875rem;">32:15</span>
+            </div>
+            <div style="padding: var(--space-lg); flex-grow: 1; display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; color: var(--color-blue-royal); font-weight: 700; text-transform: uppercase;">Day 02 • Admissions</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin: 0.4rem 0;">Central Universities Admission Blueprint</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">CUET-PG strategy and international fellowship guide.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: CAMP MEMORY WALL & INTERACTIVE DEMO SUBMISSION -->
+    <section class="section" id="memory-wall-section">
+      <div class="container">
+        
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--space-xl); flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="badge badge-emerald" style="margin-bottom: var(--space-xs);">Scholar Voices</span>
+            <h2 style="font-size: clamp(1.6rem, 2.3vw, 2.2rem); font-weight: var(--fw-black); color: var(--text-primary); margin: 0;">
+              Camp Memory Wall (ذكريات ومشاعر المشاركين)
+            </h2>
+            <p style="color: var(--text-secondary); margin-top: 4px; font-size: 0.95rem;">
+              Personal reflections, quotes, and memories recorded by student scholars and mentors during the seven days.
+            </p>
+          </div>
+          <div>
+            <button type="button" class="btn btn-primary btn-sm btn-magnetic" id="btn-open-memory-modal" data-magnetic="true" style="gap: 6px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              + Contribute a Memory (Demo)
+            </button>
+          </div>
+        </div>
+
+        <!-- Memory Wall Grid -->
+        <div class="memory-wall-grid" id="memory-wall-container">
+          
+          <!-- Memory Card 1 -->
+          <div class="memory-polaroid-card">
+            <div>
+              <span class="badge badge-royal" style="font-size: 0.6875rem; margin-bottom: 0.5rem;">Day 03 Reflection</span>
+              <p class="memory-quote-text">
+                "The statement of purpose clinic completely transformed my perspective. Coming from a traditional Dars background, I now understand how to translate my classical grounding into high-impact academic research."
+              </p>
+            </div>
+            <div class="memory-author-meta">
+              <div class="memory-author-avatar">AM</div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.875rem; color: var(--text-primary);">Ahmad Mansoor</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Alathurpadi Dars Senior Scholar</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory Card 2 -->
+          <div class="memory-polaroid-card">
+            <div>
+              <span class="badge badge-emerald" style="font-size: 0.6875rem; margin-bottom: 0.5rem;">Day 04 Toastmasters</span>
+              <p class="memory-quote-text">
+                "Standing up to debate in functional Arabic for the first time gave me goosebumps. The faculty encouraged us every step of the way without judgment. This camp builds true leadership."
+              </p>
+            </div>
+            <div class="memory-author-meta">
+              <div class="memory-author-avatar" style="background: var(--color-mint-pale); color: var(--color-emerald);">ZF</div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.875rem; color: var(--text-primary);">Zaynul Abideen Faizy</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">SUFFA Dars Cohort Delegate</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory Card 3 -->
+          <div class="memory-polaroid-card">
+            <div>
+              <span class="badge badge-royal" style="font-size: 0.6875rem; margin-bottom: 0.5rem;">Day 06 Nocturnal Mutala'a</span>
+              <p class="memory-quote-text">
+                "The quiet nocturnal mutala'a reading hours after midnight, surrounded by hundreds of passionate brothers delving into classical texts, is a memory that will stay with me for life."
+              </p>
+            </div>
+            <div class="memory-author-meta">
+              <div class="memory-author-avatar">MS</div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.875rem; color: var(--text-primary);">Muhammed Shafi</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Malappuram Dars Scholar</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ADVANCED FULLSCREEN IMAGE LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="image-lightbox" role="dialog" aria-modal="true" aria-label="Fullscreen Image Lightbox Viewer">
+    <div class="lightbox-container">
+      
+      <!-- Previous Arrow -->
+      <button type="button" class="lightbox-nav-arrow lightbox-nav-prev" id="lightbox-prev" aria-label="Previous Image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <!-- Main View Wrap -->
+      <div class="lightbox-view-wrap">
+        <img src="" alt="" class="lightbox-img-view" id="lightbox-img">
+      </div>
+
+      <!-- Next Arrow -->
+      <button type="button" class="lightbox-nav-arrow lightbox-nav-next" id="lightbox-next" aria-label="Next Image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+
+      <!-- Controls & Metadata Bar -->
+      <div class="lightbox-controls-bar">
+        <button type="button" class="lightbox-btn" id="lightbox-zoom-btn" title="Toggle Zoom In/Out">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </button>
+        <span id="lightbox-counter-text" style="font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.05em;">1 / 10</span>
+        <button type="button" class="lightbox-btn" id="lightbox-close" title="Close Lightbox (Esc)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Caption & Metadata -->
+      <div class="lightbox-caption-box">
+        <div class="lightbox-caption-title" id="lightbox-caption-title"></div>
+        <p style="font-size: 0.875rem; color: #CBD5E1; margin: 0;" id="lightbox-caption-desc"></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- INTERACTIVE VIDEO LIGHTBOX MODAL WITH CANVAS PLAYBACK SIMULATOR -->
+  <div class="video-lightbox-modal" id="video-lightbox" role="dialog" aria-modal="true" aria-label="Interactive Video Theatre">
+    <div class="video-player-frame">
+      
+      <!-- Video Screen Header -->
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1.25rem; background: #081124; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <span class="badge badge-emerald" id="video-modal-category">Documentary</span>
+        <button type="button" class="lightbox-btn" id="video-modal-close" style="width: 32px; height: 32px;" title="Close Video (Esc)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Interactive Canvas Screen with Simulated HD Stream & Waveform -->
+      <div class="video-screen-container">
+        <canvas id="video-canvas-stream" class="video-screen-canvas" width="800" height="450"></canvas>
+        <button type="button" id="video-canvas-center-play" style="position: absolute; width: 72px; height: 72px; border-radius: 50%; background: var(--color-blue-royal); color: #FFF; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 25px rgba(31,91,169,0.7); transition: transform 0.2s ease;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </button>
+      </div>
+
+      <!-- Custom Video Controls -->
+      <div class="video-custom-controls">
+        <div class="video-scrubber-track" id="video-scrubber-track">
+          <div class="video-scrubber-fill" id="video-scrubber-fill"></div>
+        </div>
+        <div class="video-controls-row">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <button type="button" class="lightbox-btn" id="video-play-toggle" title="Play/Pause">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" id="video-play-icon"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+            <span id="video-timer-display" style="font-size: 0.8125rem; font-family: monospace; color: #CBD5E1;">00:00 / 18:45</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span style="font-size: 0.75rem; color: var(--color-emerald); font-weight: 700;">● HD 1080p</span>
+            <button type="button" class="lightbox-btn" id="video-mute-toggle" title="Toggle Audio Simulation">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </button>
+          </div>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 0.5rem;">
+          <h4 id="video-modal-title" style="font-size: 1.05rem; font-weight: 700; margin: 0 0 4px; color: #FFF;"></h4>
+          <p id="video-modal-desc" style="font-size: 0.8125rem; color: #94A3B8; margin: 0; line-height: 1.5;"></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- INTERACTIVE MEMORY SUBMISSION MODAL (FRONTEND DEMO) -->
+  <div class="memory-modal" id="memory-modal" role="dialog" aria-modal="true" aria-label="Contribute a Camp Memory Modal">
+    <div class="memory-modal-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+        <div>
+          <span class="badge badge-emerald" style="margin-bottom: 4px;">Frontend Demo</span>
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--color-blue-deep); margin: 0;">Share Your Camp Reflection</h3>
+        </div>
+        <button type="button" class="lightbox-btn" id="memory-modal-close" style="color: var(--text-secondary); width: 32px; height: 32px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div style="background: var(--bg-soft); border-radius: var(--radius-sm); padding: 0.75rem 1rem; margin-bottom: 1.25rem; font-size: 0.8125rem; color: var(--text-muted); border-left: 3px solid var(--color-emerald);">
+        This is an interactive frontend demonstration. Your submitted quote will be saved locally in browser storage and rendered onto the Camp Memory Wall immediately.
+      </div>
+
+      <form id="memory-demo-form">
+        <div class="form-group">
+          <label class="form-label" for="mem-author">Your Name / Title</label>
+          <input type="text" id="mem-author" class="form-control" placeholder="e.g. Farooq Ali Faizy" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="mem-dars">Institution / Dars Campus</label>
+          <input type="text" id="mem-dars" class="form-control" placeholder="e.g. Melmuri Dars" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="mem-day">Associated Camp Day</label>
+          <select id="mem-day" class="form-control">
+            <option value="Day 01">Day 01 — Inauguration</option>
+            <option value="Day 02">Day 02 — Higher Studies</option>
+            <option value="Day 03">Day 03 — Study Methods</option>
+            <option value="Day 04">Day 04 — Language Skills</option>
+            <option value="Day 05">Day 05 — Digital & Soft Skills</option>
+            <option value="Day 06">Day 06 — Leadership & Service</option>
+            <option value="Day 07">Day 07 — Valedictory & Closing</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="mem-quote">Your Reflection / Inspirational Quote</label>
+          <textarea id="mem-quote" class="form-control" rows="3" placeholder="Share a meaningful insight, speech takeaway, or personal breakthrough from the camp..." required></textarea>
+        </div>
+        <div style="display: flex; gap: 0.75rem; justify-content: flex-end; margin-top: 1.5rem;">
+          <button type="button" class="btn btn-outline btn-sm" id="memory-reset-demo-btn">Reset Stored Memories</button>
+          <button type="submit" class="btn btn-primary btn-sm btn-magnetic" data-magnetic="true">Post to Memory Wall</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand & Heritage -->
+        <div class="footer-brand-col">
+          <div class="footer-brand-logo-wrap">
+            <div class="footer-logo-badge">
+              <img src="../assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo" class="footer-brand-logo-img">
+            </div>
+            <div class="footer-adsa-badge" title="Alathurpadi Dars Students' Association">
+              <img src="../assets/images/brand/adsa-official-logo.png" alt="ADSA Official Logo" class="footer-adsa-img">
+            </div>
+          </div>
+          <p class="footer-desc">
+            Organized by Alathurpadi Dars Students' Association (ADSA), fostering intellectual elevation, scholarly rigor, and international academic opportunities for future leaders.
+          </p>
+          <div class="footer-organizers">
+            <img src="../assets/images/brand/suffa-logo.png" alt="SUFFA Logo" class="footer-org-logo" title="SUFFA Dars Network">
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Camp</a></li>
+            <li><a href="theme.html" class="footer-link">Thematic Vision</a></li>
+            <li><a href="food-dining.html" class="footer-link">Food & Dining</a></li>
+            <li><a href="people.html" class="footer-link">Speakers & Mentors</a></li>
+            <li><a href="gallery.html" class="footer-link">Media Gallery</a></li>
+            <li><a href="resources.html" class="footer-link">Academic Resources</a></li>
+            <li><a href="faq.html" class="footer-link">FAQ</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- The Seven Days -->
+        <div>
+          <h4 class="footer-heading">The 7 Days</h4>
+          <ul class="footer-links-list">
+            <li><a href="journey.html" class="footer-link"><strong>7 Days Overview</strong></a></li>
+            <li><a href="day-01.html" class="footer-link">Day 01 — Inauguration</a></li>
+            <li><a href="day-02.html" class="footer-link">Day 02 — Higher Studies</a></li>
+            <li><a href="day-03.html" class="footer-link">Day 03 — Study Methods</a></li>
+            <li><a href="day-04.html" class="footer-link">Day 04 — Language Skills</a></li>
+            <li><a href="day-05.html" class="footer-link">Day 05 — Digital & Soft Skills</a></li>
+            <li><a href="day-06.html" class="footer-link">Day 06 — Leadership & Service</a></li>
+            <li><a href="day-07.html" class="footer-link">Day 07 — Reflections & Closing</a></li>
+          </ul>
+        </div>
+
+        <!-- Campus Secretariat -->
+        <div>
+          <h4 class="footer-heading">Campus & Secretariat</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; color: var(--color-emerald);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Alathurpadi Dars, Melmuri, Malappuram, Kerala - 673517</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; color: var(--color-emerald);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 90745 25205</span>
+          </div>
+          <div style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <a href="../student/login.html" class="btn btn-primary btn-sm" style="width: 100%;">Student Portal Demo</a>
+            <a href="../admin/login.html" class="btn btn-outline btn-sm" style="width: 100%; border: 1px dashed rgba(255, 255, 255, 0.4); color: #FFFFFF; background: transparent;">Admin Dashboard Demo</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 AL-IRTIQA-26. All rights reserved.
+        </div>
+        <div class="footer-demo-notice">
+          Frontend Prototype Demo Mode — No backend connected.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Stack -->
+  <script src="../assets/data/site-data.js"></script>
+  <script src="../assets/data/translations/en.js"></script>
+  <script src="../assets/data/translations/ml.js"></script>
+  <script src="../assets/data/translations/ar.js"></script>
+  <script src="../assets/js/language.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

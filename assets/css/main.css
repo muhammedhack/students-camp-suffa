@@ -1,0 +1,322 @@
+/**
+ * AL-IRTIQA-26 (الارتقاء ٢٦) — MAIN & BASE STYLES
+ * High-performance, clean, academic aesthetic
+ * Primary Palette: Royal Blue (#1F5BA9) & Emerald Green (#11AF83)
+ */
+
+/* ==========================================================================
+   1. MODERN RESET & BOX SIZING
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--fw-regular);
+  line-height: var(--line-height-body);
+  color: var(--text-secondary);
+  background-color: var(--bg-body);
+  background-image: 
+    radial-gradient(circle at 10% 0%, rgba(238, 244, 252, 0.9) 0%, transparent 40%),
+    radial-gradient(circle at 90% 15%, rgba(234, 247, 242, 0.8) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(238, 244, 252, 0.4) 0%, transparent 60%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Subtle architectural trajectory curves inspired by the logo's paper plane */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(2px 2px at 40px 60px, rgba(31, 91, 169, 0.08), transparent),
+    radial-gradient(2px 2px at 120px 180px, rgba(17, 175, 131, 0.08), transparent);
+  background-size: 240px 240px;
+  opacity: 0.8;
+  z-index: var(--z-background);
+}
+
+/* ==========================================================================
+   2. ACCESSIBILITY & FOCUS STATES
+   ========================================================================== */
+:focus-visible {
+  outline: 2px solid var(--color-blue-royal);
+  outline-offset: 3px;
+  border-radius: var(--radius-xs);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: calc(var(--z-modal) + 10);
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-blue-royal);
+  color: #FFFFFF;
+  font-weight: var(--fw-bold);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  box-shadow: var(--shadow-blue);
+  transition: top var(--transition-fast);
+}
+
+.skip-to-content:focus {
+  top: 1rem;
+}
+
+/* ==========================================================================
+   3. TYPOGRAPHY ELEMENTS & HIERARCHY
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: var(--fw-bold);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--tracking-tight);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+  color: var(--color-blue-deep);
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+  color: var(--color-blue-deep);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  color: var(--color-blue-royal);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+}
+
+h5 {
+  font-size: var(--font-size-md);
+}
+
+h6 {
+  font-size: var(--font-size-base);
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+strong, b {
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--color-blue-royal);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-blue-deep);
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   4. LAYOUT CONTAINERS & UTILITIES
+   ========================================================================== */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.container-wide {
+  width: 100%;
+  max-width: var(--container-wide);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: var(--container-narrow);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.container-editorial {
+  width: 100%;
+  max-width: var(--container-editorial);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.section-spacer {
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+  position: relative;
+}
+
+.section-spacer-sm {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.section-spacer-lg {
+  padding-top: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
+}
+
+/* Flex & Grid Helpers */
+.flex { display: flex; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-between { display: flex; align-items: center; justify-content: space-between; }
+.flex-col { display: flex; flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.grid { display: grid; }
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+/* ==========================================================================
+   5. SPECIAL BRAND HIGHLIGHTS & GRADIENTS
+   ========================================================================== */
+.royal-gradient-text {
+  background: linear-gradient(135deg, var(--color-blue-deep) 0%, var(--color-blue-royal) 60%, var(--color-emerald) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.emerald-gradient-text {
+  background: linear-gradient(135deg, var(--color-emerald-deep) 0%, var(--color-emerald) 50%, #20C997 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-royal {
+  color: var(--color-blue-royal);
+}
+
+.text-emerald {
+  color: var(--color-emerald);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.arabic-font {
+  font-family: var(--font-arabic) !important;
+  direction: rtl;
+}
+
+.malayalam-font {
+  font-family: var(--font-malayalam) !important;
+}
+
+/* Architectural Dividers */
+.divider-subtle {
+  width: 100%;
+  height: 1px;
+  background: var(--border-light);
+  margin: var(--space-lg) 0;
+  border: none;
+}
+
+.divider-brand {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-blue-royal), var(--color-emerald), transparent);
+  margin: var(--space-lg) 0;
+  border: none;
+}

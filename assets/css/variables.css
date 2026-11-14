@@ -1,0 +1,210 @@
+/**
+ * AL-IRTIQA-26 (الارتقاء ٢٦) — OFFICIAL DESIGN SYSTEM TOKENS
+ * Derived strictly from the Official Brand Identity & Logo
+ * Primary Colors: Royal Blue (#1F5BA9) & Emerald Green (#11AF83)
+ * Supporting: Deep Blue (#1E3882), Clean White (#FFFFFF), Soft Off-White (#F8FAFC), Pale Mint (#EAF7F2), Pale Blue (#EEF4FC)
+ */
+
+:root {
+  /* ==========================================================================
+     1. OFFICIAL BRAND PALETTE
+     ========================================================================== */
+  
+  /* Primary Royal & Deep Blue Spectrum */
+  --color-blue-darkest: #0A1633;
+  --color-blue-deep: #1E3882;       /* Official Deep Blue */
+  --color-blue-royal: #1F5BA9;      /* Official Primary Royal Blue */
+  --color-blue-light: #3577CB;
+  --color-blue-pale: #EEF4FC;       /* Official Pale Blue */
+  --color-blue-glow: rgba(31, 91, 169, 0.25);
+  --color-blue-border: rgba(31, 91, 169, 0.2);
+
+  /* Primary Emerald Green & Mint Spectrum */
+  --color-emerald-deep: #0C8663;
+  --color-emerald: #11AF83;         /* Official Emerald Green */
+  --color-emerald-light: #20C997;
+  --color-mint-pale: #EAF7F2;       /* Official Pale Mint */
+  --color-mint-glow: rgba(17, 175, 131, 0.22);
+  --color-emerald-border: rgba(17, 175, 131, 0.25);
+
+  /* Canvas, Neutral Surfaces & Contrast */
+  --color-white: #FFFFFF;           /* Pure Clean White */
+  --color-offwhite: #F8FAFC;        /* Official Soft Off-White */
+  --color-surface-soft: #F1F5F9;
+  --color-slate-100: #E2E8F0;
+  --color-slate-200: #CBD5E1;
+  --color-slate-400: #94A3B8;
+  --color-slate-500: #64748B;
+  --color-slate-700: #334155;
+  --color-slate-800: #1E293B;
+  --color-slate-900: #0F172A;
+
+  /* Functional Feedback */
+  --color-success: #11AF83;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #1F5BA9;
+
+  /* ==========================================================================
+     2. SURFACE ELEVATIONS & SURFACES (MODERN LIGHT ACADEMIC CANVAS)
+     ========================================================================== */
+  --bg-body: var(--color-offwhite);
+  --bg-surface-0: var(--color-white);
+  --bg-surface-1: #F8FAFC;
+  --bg-surface-2: #F1F5F9;
+  --bg-surface-card: #FFFFFF;
+  --bg-surface-card-hover: #FFFFFF;
+  --bg-surface-glass: rgba(255, 255, 255, 0.88);
+  --bg-surface-overlay: rgba(15, 23, 42, 0.65);
+  --bg-surface-tint-blue: var(--color-blue-pale);
+  --bg-surface-tint-mint: var(--color-mint-pale);
+  --bg-footer: #0D1E40;             /* Sophisticated Deep Blue Footer */
+
+  /* Border Tones */
+  --border-light: #E2E8F0;
+  --border-medium: #CBD5E1;
+  --border-blue: rgba(31, 91, 169, 0.2);
+  --border-blue-hover: rgba(31, 91, 169, 0.55);
+  --border-emerald: rgba(17, 175, 131, 0.25);
+  --border-subtle: rgba(15, 23, 42, 0.05);
+
+  /* Text Colors */
+  --text-primary: #0F172A;          /* Deep Slate for High Contrast */
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --text-blue: var(--color-blue-royal);
+  --text-blue-deep: var(--color-blue-deep);
+  --text-emerald: var(--color-emerald);
+  --text-inverse: #FFFFFF;
+
+  /* ==========================================================================
+     3. TYPOGRAPHY SYSTEM
+     ========================================================================== */
+  --font-en-display: 'Plus Jakarta Sans', 'Cinzel', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-en-body: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-arabic: 'Amiri', 'Noto Sans Arabic', 'Traditional Arabic', serif;
+  --font-malayalam: 'Noto Sans Malayalam', 'Manjari', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Current Active Fonts */
+  --font-heading: var(--font-en-display);
+  --font-body: var(--font-en-body);
+
+  /* Fluid Typography Scale */
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);       /* 12-13px */
+  --font-size-sm: clamp(0.8125rem, 0.75rem + 0.3vw, 0.875rem);      /* 13-14px */
+  --font-size-base: clamp(0.9375rem, 0.875rem + 0.3vw, 1.0625rem);  /* 15-17px */
+  --font-size-md: clamp(1.0625rem, 1rem + 0.4vw, 1.25rem);          /* 17-20px */
+  --font-size-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);           /* 20-24px */
+  --font-size-xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);                /* 24-32px */
+  --font-size-2xl: clamp(1.875rem, 1.5rem + 1.6vw, 2.75rem);        /* 30-44px */
+  --font-size-3xl: clamp(2.25rem, 1.8rem + 2.4vw, 3.5rem);          /* 36-56px */
+  --font-size-display: clamp(2.75rem, 2rem + 3.5vw, 5rem);          /* 44-80px */
+  --font-size-giant: clamp(3.5rem, 2.5rem + 5vw, 6.5rem);
+
+  /* Line Heights */
+  --line-height-tight: 1.15;
+  --line-height-heading: 1.28;
+  --line-height-editorial: 1.45;
+  --line-height-body: 1.68;
+  --line-height-relaxed: 1.85;
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  /* Letter Spacing */
+  --tracking-tighter: -0.035em;
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+  --tracking-widest: 0.16em;
+
+  /* ==========================================================================
+     4. SPACING & GRID SYSTEM
+     ========================================================================== */
+  --space-2xs: clamp(0.25rem, 0.2rem + 0.2vw, 0.375rem);
+  --space-xs: clamp(0.5rem, 0.45rem + 0.25vw, 0.625rem);
+  --space-sm: clamp(0.75rem, 0.7rem + 0.35vw, 1rem);
+  --space-md: clamp(1.25rem, 1.1rem + 0.6vw, 1.75rem);
+  --space-lg: clamp(1.75rem, 1.5rem + 1.2vw, 2.5rem);
+  --space-xl: clamp(2.5rem, 2rem + 2vw, 4rem);
+  --space-2xl: clamp(3.5rem, 2.8rem + 3.2vw, 5.5rem);
+  --space-3xl: clamp(4.5rem, 3.5rem + 4vw, 7.5rem);
+
+  /* Layout Widths */
+  --container-max: 1360px;
+  --container-wide: 1520px;
+  --container-narrow: 920px;
+  --container-editorial: 780px;
+  --container-padding: clamp(1.25rem, 0.9rem + 1.8vw, 3.5rem);
+
+  /* Border Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+  --radius-full: 9999px;
+
+  /* ==========================================================================
+     5. SHADOWS & ELEVATIONS
+     ========================================================================== */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 6px 20px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 14px 34px rgba(15, 23, 42, 0.1);
+  --shadow-xl: 0 24px 50px rgba(15, 23, 42, 0.14);
+  --shadow-card: 0 4px 20px rgba(15, 23, 42, 0.06), 0 0 1px 1px rgba(226, 232, 240, 0.8);
+  --shadow-card-hover: 0 16px 36px rgba(31, 91, 169, 0.12), 0 0 1px 1px rgba(31, 91, 169, 0.25);
+  --shadow-blue: 0 8px 24px rgba(31, 91, 169, 0.26);
+  --shadow-emerald: 0 8px 24px rgba(17, 175, 131, 0.26);
+
+  /* ==========================================================================
+     6. TRANSITIONS & TIMING
+     ========================================================================== */
+  --ease-smooth: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 180ms var(--ease-smooth);
+  --transition-base: 300ms var(--ease-smooth);
+  --transition-slow: 550ms var(--ease-editorial);
+
+  /* ==========================================================================
+     7. ELEVATION LAYERS (Z-INDEX)
+     ========================================================================== */
+  --z-background: -1;
+  --z-base: 1;
+  --z-card: 10;
+  --z-dropdown: 100;
+  --z-header: 1000;
+  --z-drawer: 1200;
+  --z-modal: 1500;
+  --z-toast: 2000;
+  --z-preloader: 9999;
+}
+
+/* RTL Specific Overrides for Arabic */
+[dir="rtl"] {
+  --font-heading: var(--font-arabic);
+  --font-body: var(--font-arabic);
+  --tracking-tighter: 0;
+  --tracking-tight: 0;
+  --tracking-wide: 0;
+  --line-height-body: 1.85;
+}
+
+/* Malayalam Specific Typography Adjustments */
+html[lang="ml"] {
+  --font-heading: var(--font-malayalam);
+  --font-body: var(--font-malayalam);
+  --tracking-tighter: 0;
+  --tracking-tight: 0;
+  --tracking-wide: 0;
+  --line-height-body: 1.8;
+  --line-height-heading: 1.35;
+}

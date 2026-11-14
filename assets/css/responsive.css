@@ -1,0 +1,196 @@
+/**
+ * AL-IRTIQA-26 (الارتقاء ٢٦) — RESPONSIVE ADAPTATIONS
+ * Mobile-First, Touch-Optimized & Fluid Screen Ergonomics
+ * Testing Targets: 320px, 360px, 375px, 390px, 430px, 768px, 1024px, 1280px, 1440px+
+ */
+
+/* ==========================================================================
+   1. LAPTOPS & DESKTOPS (<= 1280px)
+   ========================================================================== */
+@media (max-width: 1280px) {
+  :root {
+    --container-padding: 2rem;
+  }
+
+  .nav-list {
+    gap: 0.85rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+    gap: var(--space-lg);
+  }
+}
+
+/* ==========================================================================
+   2. TABLETS & SMALL LAPTOPS (<= 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  /* Hide Desktop Navigation & Show Mobile Toggle */
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-toggle-btn {
+    display: flex;
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+/* ==========================================================================
+   3. MOBILE PHONES & PHABLETS (<= 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1.25rem;
+    --space-2xl: 3.5rem;
+    --space-3xl: 4.5rem;
+  }
+
+  .site-header {
+    height: 72px;
+  }
+
+  .nav-brand-lockup {
+    padding: 3px 10px;
+    gap: 0.5rem;
+  }
+
+  .nav-brand-logo-img {
+    height: 36px;
+  }
+
+  .nav-adsa-logo-img {
+    height: 32px;
+  }
+
+  .nav-brand-divider {
+    height: 22px;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .footer-brand-col {
+    align-items: flex-start;
+  }
+
+  .footer-desc {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  /* Full-width interactive touch buttons on mobile */
+  .btn-mobile-block {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   4. COMPACT MOBILE SCREENS (<= 430px & 375px)
+   ========================================================================== */
+@media (max-width: 430px) {
+  :root {
+    --container-padding: 1rem;
+    --font-size-base: 0.9375rem;
+  }
+
+  .nav-brand-lockup {
+    padding: 2px 8px;
+    gap: 0.4rem;
+  }
+
+  .nav-brand-logo-img {
+    height: 32px;
+  }
+
+  .nav-adsa-logo-img {
+    height: 28px;
+  }
+
+  .nav-adsa-text {
+    display: none;
+  }
+
+  .lang-btn {
+    padding: 3px 7px;
+    font-size: 0.7rem;
+  }
+
+  .btn-lg {
+    padding: 0.85rem 1.6rem;
+    font-size: 0.95rem;
+  }
+
+  .card-elevation,
+  .card-featured {
+    padding: 1.25rem 1rem;
+  }
+}
+
+/* ==========================================================================
+   5. ULTRA-SMALL SCREENS (<= 320px)
+   ========================================================================== */
+@media (max-width: 320px) {
+  :root {
+    --container-padding: 0.75rem;
+  }
+
+  .nav-brand-lockup {
+    padding: 2px 5px;
+    gap: 0.3rem;
+  }
+
+  .nav-brand-logo-img {
+    height: 26px;
+  }
+
+  .nav-adsa-logo-img {
+    height: 24px;
+  }
+
+  .nav-brand-divider {
+    height: 18px;
+    margin: 0 2px;
+  }
+
+  .lang-switcher {
+    padding: 2px;
+  }
+
+  .lang-btn {
+    padding: 2px 5px;
+    font-size: 0.65rem;
+  }
+}

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Study & Scholarships Map — AL-IRTIQA-26</title>
+  <meta name="description" content="Interactive world map, premier central universities in India, renowned international faculties, and global scholarship pathways for Dars scholars.">
+  <link rel="icon" type="image/png" href="../assets/images/al-irtiqa-26-logo.png">
+  
+  <!-- Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Core Design System CSS -->
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    <div class="container announcement-content">
+      <div class="announcement-left">
+        <span class="badge badge-emerald" data-i18n="announcement.badge">ADSA • SUFFA</span>
+        <span class="announcement-text" data-i18n="announcement.text">
+          AL-IRTIQA-26 // 7-Day Residential Higher-Studies Orientation • 21 – 27 December 2026
+        </span>
+      </div>
+      <div class="announcement-right">
+        <a href="contact.html" class="announcement-link" data-i18n="announcement.supportLink">Helpdesk</a>
+        <span class="announcement-sep">•</span>
+        <a href="updates.html" class="announcement-link" data-i18n="announcement.noticeLink">Noticeboard</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Header & Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <!-- Dual Brand Lockup -->
+      <a href="../index.html" class="nav-brand" aria-label="AL-IRTIQA-26 Homepage">
+        <div class="nav-brand-lockup">
+          <img src="../assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo" class="nav-brand-logo-img">
+          <span class="nav-brand-divider"></span>
+          <img src="../assets/images/brand/adsa-official-logo.png" alt="ADSA Official Logo" class="nav-adsa-logo-img">
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li class="nav-item"><a href="theme.html" class="nav-link" data-i18n="nav.theme">Theme</a></li>
+
+          <!-- Dropdown: The Seven Days -->
+          <li class="nav-item nav-item-dropdown">
+            <a href="journey.html" class="nav-link nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              <span data-i18n="nav.journey">7 Days</span>
+              <svg class="nav-dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="journey.html" class="nav-dropdown-link" role="menuitem">
+                <strong>Overview (All 7 Days)</strong>
+              </a>
+              <hr style="border: none; border-top: 1px solid var(--border-light); margin: 4px 0;">
+              <a href="day-01.html" class="nav-dropdown-link" role="menuitem">Day 01 — Inauguration</a>
+              <a href="day-02.html" class="nav-dropdown-link" role="menuitem">Day 02 — Higher Studies</a>
+              <a href="day-03.html" class="nav-dropdown-link" role="menuitem">Day 03 — Study Methods</a>
+              <a href="day-04.html" class="nav-dropdown-link" role="menuitem">Day 04 — Language Skills</a>
+              <a href="day-05.html" class="nav-dropdown-link" role="menuitem">Day 05 — Digital & Soft Skills</a>
+              <a href="day-06.html" class="nav-dropdown-link" role="menuitem">Day 06 — Leadership & Service</a>
+              <a href="day-07.html" class="nav-dropdown-link" role="menuitem">Day 07 — Reflections & Closing</a>
+            </div>
+          </li>
+
+          <!-- Dropdown: Program & Campus Life -->
+          <li class="nav-item nav-item-dropdown">
+            <a href="activities.html" class="nav-link nav-dropdown-trigger active" aria-haspopup="true" aria-expanded="false">
+              <span>Program & Life</span>
+              <svg class="nav-dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="activities.html" class="nav-dropdown-link" role="menuitem">Activities & Workshops</a>
+              <a href="food-dining.html" class="nav-dropdown-link" role="menuitem">
+                <strong>Food & Dining (7 Days)</strong>
+              </a>
+              <a href="global-study.html" class="nav-dropdown-link active" role="menuitem">Global Universities</a>
+              <a href="gallery.html" class="nav-dropdown-link" role="menuitem">Media Gallery</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="people.html" class="nav-link" data-i18n="nav.people">Speakers</a></li>
+          <li class="nav-item"><a href="resources.html" class="nav-link" data-i18n="nav.resources">Resources</a></li>
+          <li class="nav-item"><a href="updates.html" class="nav-link" data-i18n="nav.updates">Updates</a></li>
+          <li class="nav-item"><a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="header-actions">
+        <!-- Multilingual Switcher -->
+        <div class="lang-switcher" role="group" aria-label="Language Selector">
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="ml" aria-pressed="false">മല</button>
+          <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">عر</button>
+        </div>
+
+        <!-- Student Portal CTA Button -->
+        <a href="../student/login.html" class="btn btn-primary btn-sm nav-cta-btn btn-magnetic" data-magnetic="true">
+          <span data-i18n="nav.studentPortal">Student Portal</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button type="button" class="nav-toggle-btn" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="mobile-nav-top">
+      <div class="nav-brand-lockup" style="margin-bottom: 1.25rem;">
+        <img src="../assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo" style="height: 32px; width: auto;">
+        <span class="nav-brand-divider"></span>
+        <img src="../assets/images/brand/adsa-official-logo.png" alt="ADSA Logo" style="height: 28px; width: auto;">
+      </div>
+
+      <div class="mobile-nav-group-title">Overview</div>
+      <div class="mobile-sub-grid">
+        <a href="../index.html" class="mobile-sub-link">Home</a>
+        <a href="about.html" class="mobile-sub-link">About Camp</a>
+        <a href="theme.html" class="mobile-sub-link">Theme Vision</a>
+        <a href="people.html" class="mobile-sub-link">Speakers</a>
+      </div>
+
+      <div class="mobile-nav-group-title">The Seven Days</div>
+      <div class="mobile-sub-grid">
+        <a href="journey.html" class="mobile-sub-link">7 Days Overview</a>
+        <a href="day-01.html" class="mobile-sub-link">Day 01</a>
+        <a href="day-02.html" class="mobile-sub-link">Day 02</a>
+        <a href="day-03.html" class="mobile-sub-link">Day 03</a>
+        <a href="day-04.html" class="mobile-sub-link">Day 04</a>
+        <a href="day-05.html" class="mobile-sub-link">Day 05</a>
+        <a href="day-06.html" class="mobile-sub-link">Day 06</a>
+        <a href="day-07.html" class="mobile-sub-link">Day 07</a>
+      </div>
+
+      <div class="mobile-nav-group-title">Program & Campus</div>
+      <div class="mobile-sub-grid">
+        <a href="activities.html" class="mobile-sub-link">Activities</a>
+        <a href="food-dining.html" class="mobile-sub-link">Food & Dining</a>
+        <a href="global-study.html" class="mobile-sub-link active">Global Study</a>
+        <a href="gallery.html" class="mobile-sub-link">Gallery</a>
+        <a href="resources.html" class="mobile-sub-link">Resources</a>
+        <a href="updates.html" class="mobile-sub-link">Updates</a>
+        <a href="faq.html" class="mobile-sub-link">FAQ</a>
+        <a href="contact.html" class="mobile-sub-link">Contact</a>
+      </div>
+
+      <div class="mobile-nav-group-title">Portals (Demo)</div>
+      <div class="mobile-sub-grid">
+        <a href="../student/login.html" class="mobile-sub-link" style="color: var(--color-blue-royal); font-weight: bold;">Student Portal</a>
+        <a href="../admin/login.html" class="mobile-sub-link" style="color: var(--color-emerald); font-weight: bold;">Admin Demo</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="../index.html" class="breadcrumb-link">Home</a></li>
+            <li class="breadcrumb-item">/</li>
+            <li class="breadcrumb-item"><span class="breadcrumb-current">Global Studies</span></li>
+          </ol>
+        </nav>
+        <span class="page-hero-badge">Academic Horizons & Fellowships</span>
+        <h1 class="page-hero-title">Global Universities & Study Pathways</h1>
+        <p class="page-hero-subtitle">
+          An interactive academic cartography bridging foundational Dars scholarship with premier central universities in India and leading international research faculties worldwide.
+        </p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE GLOBAL MAP & SCHOLARSHIP CONSOLE (SIGNATURE EXPERIENCE) -->
+    <section class="section" style="padding-top: var(--space-2xl); padding-bottom: var(--space-xl);">
+      <div class="container">
+        
+        <div style="text-align: center; margin-bottom: var(--space-xl);">
+          <span class="badge badge-emerald" style="margin-bottom: var(--space-xs);">Interactive Cartography</span>
+          <h2 style="font-size: clamp(1.65rem, 2.4vw, 2.3rem); font-weight: var(--fw-black); color: var(--text-primary); margin: 0;">
+            Interactive World Study Map
+          </h2>
+          <p style="color: var(--text-secondary); max-width: 680px; margin: 0.5rem auto 0; font-size: 0.95rem;">
+            Click on any country pin on the map or touch the destination pills below to trace the academic flight path and inspect admission roadmaps, top faculties, and scholarship windows.
+          </p>
+        </div>
+
+        <!-- The Global Map Card -->
+        <div class="global-map-wrapper">
+          
+          <!-- Destination Quick Filter Pills -->
+          <div class="global-dest-pills-bar" role="tablist" aria-label="Study Destinations">
+            <button type="button" class="global-dest-pill active" data-dest="india" role="tab" aria-selected="true">🇮🇳 India (Central Universities)</button>
+            <button type="button" class="global-dest-pill" data-dest="egypt" role="tab" aria-selected="false">🇪🇬 Egypt (Al-Azhar University)</button>
+            <button type="button" class="global-dest-pill" data-dest="qatar" role="tab" aria-selected="false">🇶🇦 Qatar (HBKU & Qatar Univ)</button>
+            <button type="button" class="global-dest-pill" data-dest="turkey" role="tab" aria-selected="false">🇹🇷 Turkey (Marmara & Istanbul)</button>
+            <button type="button" class="global-dest-pill" data-dest="uk" role="tab" aria-selected="false">🇬🇧 UK (SOAS & Oxford)</button>
+            <button type="button" class="global-dest-pill" data-dest="malaysia" role="tab" aria-selected="false">🇲🇾 Malaysia (IIUM)</button>
+            <button type="button" class="global-dest-pill" data-dest="saudi" role="tab" aria-selected="false">🇸🇦 Saudi Arabia (Madinah)</button>
+          </div>
+
+          <!-- Interactive SVG World Map Canvas -->
+          <div class="global-map-svg-container">
+            <svg id="world-map-svg" viewBox="0 0 1000 480" style="width: 100%; height: 100%; display: block;" preserveAspectRatio="xMidYMid meet">
+              
+              <!-- Stylized World Landmass Silhouettes (Minimalist High-Contrast Vector) -->
+              <g fill="#14264E" stroke="#1F3F7A" stroke-width="1" opacity="0.85">
+                <!-- North America -->
+                <path d="M 80,120 Q 140,80 200,90 Q 230,130 180,180 Q 140,240 100,200 Z" />
+                <!-- South America -->
+                <path d="M 220,250 Q 270,270 260,360 Q 220,420 200,340 Z" />
+                <!-- Europe & UK -->
+                <path d="M 450,90 Q 510,80 540,130 Q 500,160 450,140 Z" />
+                <!-- Africa & Egypt -->
+                <path d="M 460,180 Q 550,170 560,260 Q 540,360 480,340 Q 430,260 460,180 Z" />
+                <!-- Middle East & Gulf -->
+                <path d="M 550,170 Q 610,180 600,230 Q 550,220 550,170 Z" />
+                <!-- Asia & India -->
+                <path d="M 570,120 Q 750,90 840,160 Q 780,260 670,240 Q 630,300 620,230 Z" />
+                <!-- Southeast Asia & Malaysia -->
+                <path d="M 730,270 Q 790,280 770,330 Q 720,310 730,270 Z" />
+                <!-- Australia -->
+                <path d="M 800,340 Q 880,330 870,400 Q 800,410 800,340 Z" />
+              </g>
+
+              <!-- Dynamic Animated Flight Arcs (Radiating from Kerala [630, 275]) -->
+              <g id="map-flight-arcs-group">
+                <!-- Kerala Origin Pulse Marker -->
+                <circle cx="630" cy="275" r="5" fill="#11AF83" />
+                <circle cx="630" cy="275" r="14" fill="none" stroke="#11AF83" stroke-width="1.5" class="node-radar-pulse" opacity="0.8" />
+                
+                <!-- Flight Path Arcs (Hidden/Shown dynamically) -->
+                <!-- To India Delhi [640, 215] -->
+                <path id="arc-india" class="map-flight-arc" d="M 630,275 Q 640,240 642,215" style="display: block; stroke-dasharray: 4 4;" />
+                <!-- To Egypt Cairo [525, 185] -->
+                <path id="arc-egypt" class="map-flight-arc" d="M 630,275 Q 570,195 525,185" style="display: none;" />
+                <!-- To Qatar Doha [580, 215] -->
+                <path id="arc-qatar" class="map-flight-arc" d="M 630,275 Q 600,230 580,215" style="display: none;" />
+                <!-- To Turkey Istanbul [510, 140] -->
+                <path id="arc-turkey" class="map-flight-arc" d="M 630,275 Q 550,170 510,140" style="display: none;" />
+                <!-- To UK London [465, 120] -->
+                <path id="arc-uk" class="map-flight-arc" d="M 630,275 Q 510,140 465,120" style="display: none;" />
+                <!-- To Malaysia KL [740, 290] -->
+                <path id="arc-malaysia" class="map-flight-arc" d="M 630,275 Q 685,295 740,290" style="display: none;" />
+                <!-- To Saudi Arabia Madinah [560, 210] -->
+                <path id="arc-saudi" class="map-flight-arc" d="M 630,275 Q 590,225 560,210" style="display: none;" />
+              </g>
+
+              <!-- Interactive Destination Pins -->
+              <g id="map-pins-group">
+                
+                <!-- Kerala Origin Label -->
+                <g transform="translate(630, 295)">
+                  <rect x="-45" y="-12" width="90" height="20" rx="10" fill="#11AF83" />
+                  <text x="0" y="2" fill="#FFFFFF" font-size="10" font-weight="700" text-anchor="middle">📍 Melmuri (Dars)</text>
+                </g>
+
+                <!-- India Delhi Marker [642, 215] -->
+                <g class="map-pin-btn active" data-dest="india" transform="translate(642, 215)">
+                  <circle cx="0" cy="0" r="7" fill="#1F5BA9" stroke="#FFF" stroke-width="2"/>
+                  <text x="12" y="4" fill="#FFFFFF" font-size="11" font-weight="700">🇮🇳 Central Universities</text>
+                </g>
+
+                <!-- Egypt Cairo Marker [525, 185] -->
+                <g class="map-pin-btn" data-dest="egypt" transform="translate(525, 185)">
+                  <circle cx="0" cy="0" r="7" fill="#11AF83" stroke="#FFF" stroke-width="2"/>
+                  <text x="-12" y="4" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="end">🇪🇬 Al-Azhar</text>
+                </g>
+
+                <!-- Qatar Doha Marker [580, 215] -->
+                <g class="map-pin-btn" data-dest="qatar" transform="translate(580, 215)">
+                  <circle cx="0" cy="0" r="7" fill="#11AF83" stroke="#FFF" stroke-width="2"/>
+                  <text x="12" y="4" fill="#FFFFFF" font-size="11" font-weight="700">🇶🇦 Qatar (HBKU)</text>
+                </g>
+
+                <!-- Turkey Istanbul Marker [510, 140] -->
+                <g class="map-pin-btn" data-dest="turkey" transform="translate(510, 140)">
+                  <circle cx="0" cy="0" r="7" fill="#11AF83" stroke="#FFF" stroke-width="2"/>
+                  <text x="12" y="4" fill="#FFFFFF" font-size="11" font-weight="700">🇹🇷 Marmara / Istanbul</text>
+                </g>
+
+                <!-- UK London Marker [465, 120] -->
+                <g class="map-pin-btn" data-dest="uk" transform="translate(465, 120)">
+                  <circle cx="0" cy="0" r="7" fill="#11AF83" stroke="#FFF" stroke-width="2"/>
+                  <text x="-12" y="4" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="end">🇬🇧 SOAS / Oxford</text>
+                </g>
+
+                <!-- Malaysia KL Marker [740, 290] -->
+                <g class="map-pin-btn" data-dest="malaysia" transform="translate(740, 290)">
+                  <circle cx="0" cy="0" r="7" fill="#11AF83" stroke="#FFF" stroke-width="2"/>
+                  <text x="12" y="4" fill="#FFFFFF" font-size="11" font-weight="700">🇲🇾 IIUM</text>
+                </g>
+
+                <!-- Saudi Arabia Madinah Marker [560, 210] -->
+                <g class="map-pin-btn" data-dest="saudi" transform="translate(560, 210)">
+                  <circle cx="0" cy="0" r="7" fill="#11AF83" stroke="#FFF" stroke-width="2"/>
+                  <text x="-12" y="16" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="end">🇸🇦 Madinah Univ</text>
+                </g>
+
+              </g>
+            </svg>
+          </div>
+
+          <!-- Dynamic Country Information Console -->
+          <div class="country-info-console" id="country-info-console">
+            
+            <!-- Left Summary Column -->
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <span id="console-country-flag" style="font-size: 1.75rem;">🇮🇳</span>
+                <div>
+                  <h3 id="console-country-name" style="font-size: 1.35rem; font-weight: 800; color: #FFFFFF; margin: 0;">
+                    Premier Central Universities in India
+                  </h3>
+                  <span id="console-hub-tag" style="font-size: 0.75rem; color: var(--color-emerald); font-weight: 700; text-transform: uppercase;">
+                    National Accreditation // CUET-PG Route
+                  </span>
+                </div>
+              </div>
+              <p id="console-country-desc" style="font-size: 0.875rem; color: #CBD5E1; line-height: 1.6; margin-top: 0.75rem;">
+                Targeted institutions offering renowned faculties in Arabic language sciences, linguistics, international relations, comparative literature, and Islamic civilization studies.
+              </p>
+              <div style="margin-top: 1.25rem;">
+                <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-blue-royal); margin-bottom: 0.35rem;">
+                  Key Institutions:
+                </div>
+                <div id="console-unis-list" style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                  <span class="badge badge-royal" style="font-size: 0.75rem;">JNU New Delhi</span>
+                  <span class="badge badge-royal" style="font-size: 0.75rem;">Jamia Millia Islamia</span>
+                  <span class="badge badge-royal" style="font-size: 0.75rem;">EFLU Hyderabad</span>
+                  <span class="badge badge-royal" style="font-size: 0.75rem;">Delhi University (DU)</span>
+                  <span class="badge badge-royal" style="font-size: 0.75rem;">AMU Aligarh</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Details Column -->
+            <div style="background: rgba(0, 0, 0, 0.25); border-radius: var(--radius-md); padding: 1.25rem; border: 1px solid rgba(255,255,255,0.08);">
+              
+              <div style="margin-bottom: 1rem;">
+                <span style="font-size: 0.75rem; color: var(--color-emerald); font-weight: 700; text-transform: uppercase;">Recommended Programs for Dars Scholars</span>
+                <div id="console-programs-text" style="font-size: 0.875rem; color: #FFFFFF; font-weight: 600; margin-top: 4px;">
+                  MA Arabic Language & Literature, MA International Relations, MA Linguistics, MA Comparative Religion.
+                </div>
+              </div>
+
+              <div style="margin-bottom: 1rem;">
+                <span style="font-size: 0.75rem; color: var(--color-emerald); font-weight: 700; text-transform: uppercase;">Scholarship & Fellowship Opportunities</span>
+                <div id="console-scholarship-text" style="font-size: 0.875rem; color: #CBD5E1; margin-top: 4px;">
+                  UGC Non-NET fellowship, MANF equivalent schemes, Central Sector Scholarships, and university hostel grants.
+                </div>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+                <div style="font-size: 0.75rem; color: #94A3B8;">
+                  Target Entrance Window: <strong>CUET-PG (March / April)</strong>
+                </div>
+                <a href="resources.html" class="btn btn-outline-emerald btn-sm" id="console-action-link" style="padding: 4px 12px; font-size: 0.75rem;">
+                  Download Entrance Syllabus Guide →
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: ADMISSION ROADMAP STEPS -->
+    <section class="section" style="background: var(--bg-soft); border-top: 1px solid var(--border-light);">
+      <div class="container">
+        
+        <div style="text-align: center; margin-bottom: var(--space-2xl);">
+          <span class="badge badge-royal" style="margin-bottom: var(--space-xs);">5-Step Strategy</span>
+          <h2 style="font-size: clamp(1.6rem, 2.3vw, 2.2rem); font-weight: var(--fw-black); color: var(--text-primary); margin: 0;">
+            The 5-Step University Admission Roadmap
+          </h2>
+          <p style="color: var(--text-secondary); max-width: 640px; margin: 0.5rem auto 0; font-size: 0.95rem;">
+            From classical Dars sanad equivalence to foreign embassy attestation and scholarship interviews.
+          </p>
+        </div>
+
+        <div class="roadmap-container">
+          
+          <div class="roadmap-step-card card-elevation">
+            <span class="badge badge-royal" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Phase 01 // Months 01 – 03</span>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-blue-deep); margin: 0 0 4px;">Dars Equivalency & Degree Validation</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">
+              Acquiring secondary certification (NIOS / State Open), Afzal-ul-Ulama degrees, and university recognition equivalence certificates.
+            </p>
+          </div>
+
+          <div class="roadmap-step-card card-elevation">
+            <span class="badge badge-emerald" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Phase 02 // Months 03 – 05</span>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-blue-deep); margin: 0 0 4px;">Entrance Exam Preparation (CUET-PG & GRE)</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">
+              Rigorous practice on previous question papers, general paper comprehension, analytical reasoning, and specialized domain syllabi.
+            </p>
+          </div>
+
+          <div class="roadmap-step-card card-elevation">
+            <span class="badge badge-royal" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Phase 03 // Months 05 – 07</span>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-blue-deep); margin: 0 0 4px;">Academic Writing & SOP Formulation</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">
+              Crafting distinct, intellectually coherent Statements of Purpose, research proposals, and securing faculty recommendation letters.
+            </p>
+          </div>
+
+          <div class="roadmap-step-card card-elevation">
+            <span class="badge badge-emerald" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Phase 04 // Months 07 – 09</span>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-blue-deep); margin: 0 0 4px;">International Attestation & Visa Dossiers</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">
+              Ministry of External Affairs (MEA) apostille, embassy consular authentications, Arabic translation of credentials, and passport readiness.
+            </p>
+          </div>
+
+          <div class="roadmap-step-card card-elevation">
+            <span class="badge badge-royal" style="font-size: 0.6875rem; margin-bottom: 0.35rem;">Phase 05 // Months 09 – 12</span>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-blue-deep); margin: 0 0 4px;">Counseling, Admission & Matriculation</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">
+              Seat acceptance, campus housing enrollment, orientation travel, and establishing peer mentorship with the global ADSA scholar network.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand & Heritage -->
+        <div class="footer-brand-col">
+          <div class="footer-brand-logo-wrap">
+            <div class="footer-logo-badge">
+              <img src="../assets/images/al-irtiqa-26-logo.png" alt="AL-IRTIQA-26 Official Logo" class="footer-brand-logo-img">
+            </div>
+            <div class="footer-adsa-badge" title="Alathurpadi Dars Students' Association">
+              <img src="../assets/images/brand/adsa-official-logo.png" alt="ADSA Official Logo" class="footer-adsa-img">
+            </div>
+          </div>
+          <p class="footer-desc">
+            Organized by Alathurpadi Dars Students' Association (ADSA), fostering intellectual elevation, scholarly rigor, and international academic opportunities for future leaders.
+          </p>
+          <div class="footer-organizers">
+            <img src="../assets/images/brand/suffa-logo.png" alt="SUFFA Logo" class="footer-org-logo" title="SUFFA Dars Network">
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Camp</a></li>
+            <li><a href="theme.html" class="footer-link">Thematic Vision</a></li>
+            <li><a href="food-dining.html" class="footer-link">Food & Dining</a></li>
+            <li><a href="people.html" class="footer-link">Speakers & Mentors</a></li>
+            <li><a href="gallery.html" class="footer-link">Media Gallery</a></li>
+            <li><a href="resources.html" class="footer-link">Academic Resources</a></li>
+            <li><a href="faq.html" class="footer-link">FAQ</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- The Seven Days -->
+        <div>
+          <h4 class="footer-heading">The 7 Days</h4>
+          <ul class="footer-links-list">
+            <li><a href="journey.html" class="footer-link"><strong>7 Days Overview</strong></a></li>
+            <li><a href="day-01.html" class="footer-link">Day 01 — Inauguration</a></li>
+            <li><a href="day-02.html" class="footer-link">Day 02 — Higher Studies</a></li>
+            <li><a href="day-03.html" class="footer-link">Day 03 — Study Methods</a></li>
+            <li><a href="day-04.html" class="footer-link">Day 04 — Language Skills</a></li>
+            <li><a href="day-05.html" class="footer-link">Day 05 — Digital & Soft Skills</a></li>
+            <li><a href="day-06.html" class="footer-link">Day 06 — Leadership & Service</a></li>
+            <li><a href="day-07.html" class="footer-link">Day 07 — Reflections & Closing</a></li>
+          </ul>
+        </div>
+
+        <!-- Campus Secretariat -->
+        <div>
+          <h4 class="footer-heading">Campus & Secretariat</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; color: var(--color-emerald);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Alathurpadi Dars, Melmuri, Malappuram, Kerala - 673517</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; color: var(--color-emerald);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 90745 25205</span>
+          </div>
+          <div style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <a href="../student/login.html" class="btn btn-primary btn-sm" style="width: 100%;">Student Portal Demo</a>
+            <a href="../admin/login.html" class="btn btn-outline btn-sm" style="width: 100%; border: 1px dashed rgba(255, 255, 255, 0.4); color: #FFFFFF; background: transparent;">Admin Dashboard Demo</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 AL-IRTIQA-26. All rights reserved.
+        </div>
+        <div class="footer-demo-notice">
+          Frontend Prototype Demo Mode — No backend connected.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Stack -->
+  <script src="../assets/data/site-data.js"></script>
+  <script src="../assets/data/translations/en.js"></script>
+  <script src="../assets/data/translations/ml.js"></script>
+  <script src="../assets/data/translations/ar.js"></script>
+  <script src="../assets/js/language.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
